@@ -1,2 +1,33 @@
 /* font-family: 'Dancing Script', cursive;
 font-family: 'DM Serif Display', serif; */
+
+/* searchbar style */
+.searchContainer{
+    display:flex;
+    margin:20px;
+}
+.customSelectLabel{
+    cursor:pointer;
+}
+.customSelectLabel img{
+    width:30px;
+    height:auto;
+    margin-right:5px;
+}
+select, input(type="text"){
+    padding:10px;
+    margin-right:10px;
+}
+button{
+    padding:0;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+button img{
+    width:30px;
+    height:auto;
+}
+button:hover img{
+    filter:brightness(1.2);
+}
