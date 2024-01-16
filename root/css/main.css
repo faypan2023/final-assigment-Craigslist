@@ -107,51 +107,62 @@ h3 {
     color: white;
     text-decoration: none;
     border-radius: var(--border-radius);
-    padding: .5rem 1rem;  
+    padding: .5rem 1rem;
 }
-.button:hover{
+
+.button:visited {
+    background-color: var(--blue-color);
+    color: #949599;
+}
+
+.button:hover {
     background-color: var(--blue-color);
     color: var(--yellow-color);
 }
-#button{
+
+#seeMore {
     margin: 0 auto 4rem 4rem;
 }
 
 
 /*footer section*/
-footer{
+footer {
     background-color: var(--nav-blue-color);
-    padding: calc(var(--spacer)*1.3) var(--db-spacer);
+    padding: calc(var(--db-spacer)*2)  var(--db-spacer);
 }
-.bottomNav{
-    display:grid;
+
+.bottomNav {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     gap: 1rem;
 }
-.Foundation{
-    grid-row:1;
-    grid-column:4;
-}
-.Philanthropies{
-    grid-row:2;
-    grid-column:4;
+
+.Foundation {
+    grid-row: 1;
+    grid-column: 4;
 }
 
-.socialMedia{
-    text-align:center;
-    padding:1rem;
+.Philanthropies {
+    grid-row: 2;
+    grid-column: 4;
 }
-/* a:link {
-  color: white;
-  text-decoration: none;
-}
-a:visited {
-    color:#CFCFCF;
-}
-a:hover {
-  color: var(--yellow-color);
-  text-decoration: none;
-} */
 
+.socialMedia {
+    text-align: center;
+    padding: 1rem;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #949599;
+}
+
+a:hover {
+    color: var(--yellow-color);
+}
