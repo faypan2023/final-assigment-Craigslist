@@ -1,33 +1,157 @@
-/* font-family: 'Dancing Script', cursive;
-font-family: 'DM Serif Display', serif; */
+/* global variables */
+html {
+    font-size: 10px;
+}
+
+:root {
+    /* typography */
+    --primary-font: 'DM Serif Display', serif;
+    --logo-font: 'Dancing Script', cursive;
+    --font-size: 1.6rem;
+    --line-height: 1.5rem;
+    /* colors */
+    --nav-blue-color: #10213e;
+    --orange-color: #e46f45;
+    --darkblue-color: #11203d;
+    --purpleblue-color: #40539f;
+    --yellow-color: #edbe2c;
+    --blue-color: #3660a1;
+    /* helper */
+    --spacer: 1rem;
+    --db-spacer: calc(var(--spacer)*2);
+    --border-radius: 6px;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* top navigation style*/
+.topNav {
+    display: flex;
+    gap: var(--db-spacer);
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--nav-blue-color);
+    padding: calc(var(--spacer)*1.3) var(--db-spacer);
+}
+
+.logo {
+    display: flex;
+    gap: var(--spacer);
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo h1 {
+    font-family: var(--logo-font);
+    font-size: calc(var(--font-size)*1.5);
+    color: white;
+    margin-right: var(--db-spacer);
+}
 
 /* searchbar style */
-.searchContainer{
-    display:flex;
-    margin:20px;
+
+
+
+/*icons navigation style*/
+h2 {
+    margin: 2rem;
+    color: var(--purpleblue-color);
 }
-.customSelectLabel{
-    cursor:pointer;
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem;
+    text-align: center;
 }
-.customSelectLabel img{
-    width:30px;
-    height:auto;
-    margin-right:5px;
+
+header {
+    background-color: #ecffff;
+    padding-bottom: 1rem;
 }
-select, input(type="text"){
-    padding:10px;
-    margin-right:10px;
+
+/*main section*/
+main h1 {
+    font-size: calc(var(--font-size)*1.5);
+    text-align: center;
+    margin: 2rem auto;
 }
-button{
-    padding:0;
-    background:none;
-    border:none;
-    cursor:pointer;
+
+article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1rem;
+    border: 1px red solid;
+    margin: 2rem;
 }
-button img{
-    width:30px;
-    height:auto;
+
+h3 {
+    color: var(--orange-color);
 }
-button:hover img{
-    filter:brightness(1.2);
+
+.button:link {
+    width: 110px;
+    height: auto;
+    background-color: var(--purpleblue-color);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: .5rem 1rem;  
 }
+.button:hover{
+    background-color: var(--blue-color);
+    color: var(--yellow-color);
+}
+#button{
+    margin: 0 auto 4rem 4rem;
+}
+
+
+/*footer section*/
+footer{
+    background-color: var(--nav-blue-color);
+    padding: calc(var(--spacer)*1.3) var(--db-spacer);
+}
+.bottomNav{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+.Foundation{
+    grid-row:1;
+    grid-column:4;
+}
+.Philanthropies{
+    grid-row:2;
+    grid-column:4;
+}
+
+.socialMedia{
+    text-align:center;
+    padding:1rem;
+}
+/* a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+    color:#CFCFCF;
+}
+a:hover {
+  color: var(--yellow-color);
+  text-decoration: none;
+} */
+

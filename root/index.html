@@ -18,18 +18,20 @@
 <body>
     <header>
         <!--  top navigation -->
-        <section>
-            <div>
+        <section class="topNav">
+            <div class="logo">
                 <a href="index.html"><img src="images/logo.gif" alt="logo"></a>
-                <h1>Craigslist</h1>
+                <h1><a href="index.html">Craigslist</a></h1>
+                <img src="images/lan.gif" alt="lan">
             </div>
-            <img src="images/lan.gif" alt="lan">
             <a href="https://post.craigslist.org/k/gLHCJxiz7hG_hu23NiS7Xg/443vb?s=subarea"> <img src="images/post.gif" alt="post"></a>
             <a href="#"><img src="images/login.gif" alt="login"></a><!-- linked to account page -->
         </section>
         <!--  search bar -->
         <section>
         <div class="searchContainer">
+         <input type="text" placeholder="search..." id="searchBar">
+          <div class="searchInputContainer">
           <label for="locationSelect" class="customSelectLabel"><img src="images/locationIcon.png" alt="dropdown"></label>
            <select id="locationSelect">
                <option value="sanDiego">San Diego</option>
@@ -40,8 +42,9 @@
                <option value="palmSprings">Palm Springs</option>
                <option value="lasVegas">Las Vegas</option>
            </select>
-            <input type="text" placeholder="search...">
+            
             <button type="submit"><img src="images/search.png" alt="searchbarIcon"></button>
+            </div>
         </div>
         </section>
         <!--  icons navigation -->
@@ -77,7 +80,7 @@
                 <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-2bd-2ba-newly-upgraded-condo/7706528595.html"><img src="images/bests1.jpg" alt="clairemont"></a>
                 <figcaption>Clairemont Dr</figcaption>
                 <div>
-                    <p>$3100</p>
+                    <h3>$3100</h3>
                     <p>San Diego, 92117</p>
                 </div>
             </figure>
@@ -85,7 +88,7 @@
                 <a href="https://sandiego.craigslist.org/csd/ctd/d/san-diego-2018-ford-focus-stk3785/7707225779.html"><img src="images/bests2.jpg" alt="fordCar"></a>
                 <figcaption>2018 Ford Focus</figcaption>
                 <div>
-                    <p>$14995</p>
+                    <h3>$14995</h3>
                     <p>Escondido, 92134</p>
                 </div>
             </figure>
@@ -100,15 +103,15 @@
                 <p>Oct.17</p>
             </figure>
         </article>
-        <a href="https://www.craigslist.org/about/best/all/"><p class="button">See More >></p></a>
-
+        <p id="button"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+       
         <h1>Newest Posts</h1>
         <article>
             <figure>
                 <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-enjoy-incredible-views-at-imt/7705614447.html"><img src="images/newest1.jpg" alt="missionValley"></a>
                 <figcaption>Mission Valley</figcaption>
                 <div>
-                    <p>$2350</p>
+                    <h3>$2350</h3>
                     <p>San Diego, 92108</p>
                 </div>
             </figure>
@@ -116,7 +119,7 @@
                 <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-do-not-look-past-this-three/7706144076.html"><img src="images/newest2.jpg" alt="eastVillage"></a>
                 <figcaption>East Village</figcaption>
                 <div>
-                    <p>$4635</p>
+                    <h3>$4635</h3>
                     <p>San Diego, 92101</p>
                 </div>
             </figure>
@@ -124,7 +127,7 @@
                 <a href="https://orangecounty.craigslist.org/mcd/d/chatsworth-2013-yamaha-stryker-twin-1304/7705795361.html"><img src="images/newest3.jpg" alt="yamahaStryker"></a>
                 <figcaption>2013 Yamaha Stryker</figcaption>
                 <div>
-                    <p>$7995</p>
+                    <h3>$7995</h3>
                     <p>Chatsworth, 91311</p>
                 </div>
             </figure>
@@ -134,15 +137,14 @@
                 <p>Oct.17</p>
             </figure>
         </article>
-        <a href="https://www.craigslist.org/about/best/all/"><p class="button">See More >></p></a>
+        <p id="button"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
 
     </main>
 
     <footer>
-        <section>
-            <a href="pages/policy.html">
-                <p>Policy</p>
-            </a><!-- linked to privacy policy page -->
+            <section class="bottomNav">
+            <p><a href="pages/policy.html">Policy</a></p>
+            <!-- linked to privacy policy page -->
             <a href="pages/about.html">
                 <p>About</p>
             </a><!-- linked to about page -->
@@ -155,12 +157,11 @@
             <a href="https://www.craigslist.org/about/craigslist_is_hiring">
                 <p>Hiring</p>
             </a>
+             <a href="https://www.craigslistfund.org/" class="Foundation"><img src="images/CraigslistFoundation.png" alt="charitableFund" ></a>
+            <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="images/Philanthropies.png" alt="newmarkPhilanthropies" ></a>
         </section>
-        <section>
-            <a href="https://www.craigslistfund.org/"><img src="images/CraigslistFoundation.png" alt="charitableFund"></a>
-            <a href="https://craignewmarkphilanthropies.org/"><img src="images/Philanthropies.png" alt="newmarkPhilanthropies"></a>
-        </section>
-        <section>
+        
+        <section class="socialMedia">
             <a href="https://www.facebook.com/groups/1490891051197225/"><img src="images/facebook.gif" alt="facebook"></a>
             <a href="https://twitter.com/craigslist_job"><img src="images/twitter.gif" alt="twitter"></a>
             <a href="https://www.instagram.com/craigslistsfinest/"><img src="images/ins.gif" alt="instagram"></a>
