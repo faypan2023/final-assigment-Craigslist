@@ -1,3 +1,6 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'EB Garamond', serif; 
+font-wight:400/500/600/700;*/
 /* global variables */
 html {
     font-size: 10px;
@@ -5,7 +8,7 @@ html {
 
 :root {
     /* typography */
-    --primary-font: 'DM Serif Display', serif;
+    --primary-font: 'EB Garamond', serif;
     --logo-font: 'Dancing Script', cursive;
     --font-size: 1.6rem;
     --line-height: 1.5rem;
@@ -58,40 +61,6 @@ img {
     margin-right: var(--db-spacer);
 }
 
- .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-#dropdownBtn {
-  width: 55px; 
-  cursor: pointer;
-}
-
-.dropdownContent {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  padding: 8px;
-}
-
-#languageSelect {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url('images/lan.gif') no-repeat right center / contain;
-  width: 100%;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.dropdown:hover .dropdownContent {
-  display: block;
-} 
-
 /* searchbar style */
 
 
@@ -113,26 +82,34 @@ header {
     background-color: #ecffff;
     padding-bottom: 1rem;
 }
-
+figcaption{
+    font-weight:600;
+}
 /*main section*/
 main h1 {
     font-size: calc(var(--font-size)*1.5);
+    font-weight:700;
     text-align: center;
     margin: 2rem auto;
 }
-
+main h3 {
+    color: var(--orange-color);
+    font-weight:500;
+}
+main figure p{
+    color:var(--darkblue-color);
+    font-size:1.2rem;
+}
 article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 1rem;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     margin: 2rem;
 }
 
-h3 {
-    color: var(--orange-color);
-}
+
 
 .button:link {
     width: 110px;
