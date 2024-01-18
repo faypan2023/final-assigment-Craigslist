@@ -22,31 +22,41 @@
             <div class="logo">
                 <a href="index.html"><img src="images/logo.gif" alt="logo"></a>
                 <h1>Craigslist</h1>
-                <img src="images/lan.gif" alt="lan">
+                <!-- <img src="images/lan.gif" alt="lan"> -->
+                <div class="dropdown">
+                    <img src="images/lan.gif" alt="Custom Image" id="dropdownBtn">
+                    <select class="dropdownContent" id="languageSelect">
+                        <option value="english" class="english"><img src="images/lan.gif" alt="Custom Image"></option>
+                        <option value="spanish">español</option>
+                        <option value="french">français</option>
+                        <option value="italian">Italiano</option>
+                        <option value="korean">한국말</option>
+                        <option value="chinese" class="chinese">中文</option>
+                    </select>
+                </div>
             </div>
             <a href="https://post.craigslist.org/k/gLHCJxiz7hG_hu23NiS7Xg/443vb?s=subarea"> <img src="images/post.gif" alt="post"></a>
             <a href="#"><img src="images/login.gif" alt="login"></a><!-- linked to account page -->
         </section>
-        <!--  search bar -->
-        <section>
-            <div class="searchContainer">
-                <input type="text" placeholder="search..." id="searchBar">
-                <div class="searchInputContainer">
-                    <label for="locationSelect" class="customSelectLabel"><img src="images/locationIcon.png" alt="dropdown"></label>
-                    <select id="locationSelect">
-                        <option value="sanDiego">San Diego</option>
-                        <option value="orangeCounty">Orange County</option>
-                        <option value="sanFrancisco">San Francisco</option>
-                        <option value="sanBarbara">San Barbara</option>
-                        <option value="chico">Chico</option>
-                        <option value="palmSprings">Palm Springs</option>
-                        <option value="lasVegas">Las Vegas</option>
-                    </select>
 
-                    <button type="submit"><img src="images/search.png" alt="searchbarIcon"></button>
+        <!--  search bar -->
+        <section class="searchbar">
+            <div class="searchBox">
+                <div class="locationDropdown">
+                    <img src="images/locationIcon.png" alt="Location Icon" id="locationIcon">
+                    <select class="cityDropdown" id="citySelect">
+                        <option value="San Diego" disabled selected hidden>San Diego</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
                 </div>
+                <input type="text" placeholder="| Search...">
+                <img src="images/search.png" alt="Search Icon" class="searchBtn">
             </div>
         </section>
+
+
         <!--  icons navigation -->
         <h2>Home ></h2>
         <nav>
