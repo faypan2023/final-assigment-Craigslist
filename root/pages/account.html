@@ -42,7 +42,7 @@
     
      
 <!--     Home link to Home link-->
-     <h2><a href="index.html">Home</a> > <a href="account.html">Account</a></h2>
+     <h2><a href="../index.html">Home</a> > <a href="account.html">Account</a></h2>
      
 <!--  icons navigation -->        
          <nav>
@@ -69,24 +69,20 @@
         </nav>
      
 <!--        member profile with photo and name-->
-     <nav>
-        <figure>
-         <img src="../images/ProfilePhoto.png" alt="member profile photo">
-        </figure>
-<!--調整大小-->
-         <figure>
-         <h1>Michelle Davison</h1>
-        </figure>
-         
-<!--         member profile introduction-->
-         <figure>
+<nav>
+    <figure class="profileContainer">
+        <img src="../images/ProfilePhoto.png" alt="member profile photo" class="ProfilePhoto">
+        <div class="profileInfo">
+            <h1>Michelle Davison</h1>
+            <!-- member profile information -->
             <h2>
-             <p>Member Since:September 2023</p>
-             <p>Posts I Created: 20 new posts in the last 30 days</p>
-             <p>Items I Sold:5 items in the last 30 days</p>
-         </h2>
-         </figure>
-    </nav>
+                <p>Member Since: September 2023</p>
+                <p>Posts I Created: 20 new posts in the last 30 days</p>
+                <p>Items I Sold: 5 items in the last 30 days</p>
+            </h2>
+        </div>
+    </figure>
+</nav>
     
 <!--
     <nav>
@@ -123,37 +119,43 @@
 
 
 <main>
-<!--   block with blue background-->
-   <h1>Create A Post</h1>
-   <h2>
-       <p>Add A New Post</p>
-       <p>Edit My Post</p>
-       <p>Posts History</p>
-       <p>Manage My Posts</p>
-   </h2>
-   
-   <h1>Like &amp View Items</h1>
-   <h2>
-       <p>Liked Items</p>
-       <p>Saved Items</p>
-       <p>My View History</p>
-       <p>Transaction History</p>
-   </h2>
-   
-   <h1>My Profile</h1>
-   <h2>
-       <p>Edit My Information</p>
-       <p>Delete My Account</p>
-   </h2>
-   
-   <h1>My Message</h1>
-   <h2>
-       <p>View All Messages</p>
-       <p>Unread Messages</p>
-       <p>Archived Messages</p>
-       <p>Trash can</p>
-   </h2>
-    
+    <section class="mainblock">
+        <h1>Create A Post</h1>
+        <ul>
+            <li>Add A New Post</li>
+            <li>Edit My Post</li>
+            <li>Posts History</li>
+            <li>Manage My Posts</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Like &amp View Items</h1>
+        <ul>
+            <li>Liked Items</li>
+            <li>Saved Items</li>
+            <li>My View History</li>
+            <li>Transaction History</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>My Profile</h1>
+        <ul>
+            <li>Edit My Information</li>
+            <li>Delete My Account</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>My Message</h1>
+        <ul>
+            <li>View All Messages</li>
+            <li>Unread Messages</li>
+            <li>Archived Messages</li>
+            <li>Trash can</li>
+        </ul>
+    </section>
 </main>
 
 <footer>
