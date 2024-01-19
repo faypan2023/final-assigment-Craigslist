@@ -18,44 +18,77 @@
 
 <body>
 <header>
-    <!--  top navigation -->
-    <section>
-        <div>
-          <img src="../images/logo.gif" alt="Craigslist logo">
-          <h1>Craigslist</h1>
+        <!--  top navigation -->
+        <section class="topNav">
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.gif" alt="logo"></a>
+                <h1>Craigslist</h1>
+                <!-- <img src="images/lan.gif" alt="lan"> -->
+                <div class="dropdown">
+                    <img src="../images/lan.gif" alt="Custom Image" id="dropdownBtn">
+                    <select class="dropdownContent" id="languageSelect">
+                        <option value="english" class="english"><img src="../images/lan.gif" alt="../Custom Image"></option>
+                        <option value="spanish">español</option>
+                        <option value="french">français</option>
+                        <option value="italian">Italiano</option>
+                        <option value="korean">한국말</option>
+                        <option value="chinese" class="chinese">中文</option>
+                    </select>
+                </div>
             </div>
-        
-        <img src="../images/lan.gif" alt="lan">
-        <img src="../images/post.gif" alt="post">
-        <img src="../images/login.gif" alt="login">
-    </section>
-<!--
-    </section>
-       search bar 
-    <section>
--->
-      
+            <a href="https://post.craigslist.org/k/gLHCJxiz7hG_hu23NiS7Xg/443vb?s=subarea"> <img src="../images/post.gif" alt="post"></a>
+            <a href="#"><img src="../images/login.gif" alt="login"></a><!-- linked to account page -->
+        </section>
     
-     <!--  icons navigation -->
-     <h2>Home > Account</h2>
+     
+<!--     Home link to Home link-->
+     <h2><a href="index.html">Home</a> > <a href="account.html">Account</a></h2>
+     
+<!--  icons navigation -->        
+         <nav>
+            <figure>
+                <a href="pages/local.html"><img src="../images/icons1.gif" alt="local"></a><!-- linked to local page -->
+                <figcaption>Local</figcaption>
+            </figure>
+            <figure>
+                <a href="pages/jobs.html"><img src="../images/icons2.gif" alt="jobs"></a><!-- linked to jobs page -->
+                <figcaption>Jobs</figcaption>
+            </figure>
+            <figure>
+                <a href="pages/housing.html"><img src="../images/icons3.gif" alt="housing"></a><!-- linked to housing page -->
+                <figcaption>Housing</figcaption>
+            </figure>
+            <figure>
+                <a href="pages/service.html"> <img src="../images/icons4.gif" alt="service"></a><!-- linked to service page -->
+                <figcaption>Service</figcaption>
+            </figure>
+            <figure>
+                <a href="pages/pets.html"><img src="../images/icons5.gif" alt="pets"></a><!-- linked to pets page -->
+                <figcaption>Pets</figcaption>
+            </figure>
+        </nav>
      
 <!--        member profile with photo and name-->
      <nav>
+        <figure>
          <img src="../images/ProfilePhoto.png" alt="member profile photo">
+        </figure>
 <!--調整大小-->
-         <article>
+         <figure>
          <h1>Michelle Davison</h1>
-         </article>
+        </figure>
          
 <!--         member profile introduction-->
-         <article>
+         <figure>
             <h2>
              <p>Member Since:September 2023</p>
              <p>Posts I Created: 20 new posts in the last 30 days</p>
              <p>Items I Sold:5 items in the last 30 days</p>
          </h2>
-         </article>
+         </figure>
     </nav>
+    
+<!--
     <nav>
        <figure>
            <img src="../images/" alt="event">
@@ -82,9 +115,13 @@
            <figcaption>Lost &amp Found</figcaption>
        </figure>
     </nav>
+-->
 
     
 </header>
+
+
+
 <main>
 <!--   block with blue background-->
    <h1>Create A Post</h1>
