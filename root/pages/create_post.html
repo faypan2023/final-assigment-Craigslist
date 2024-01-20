@@ -91,16 +91,16 @@
             <!-- 這裡可以放置表單，用於填寫新貼文的詳細信息 -->
             <form action="process_post.php" method="post">
                 <!-- 表單項目，例如標題、內容、類別等 -->
-                <label for="postTitle">Title:</label>
-                <input type="text" id="postTitle" name="postTitle" required>
-
-                <label for="postContent">Content:</label>
+                <label for="postTitle">Post Title:</label>
+                <textarea id="postTitle" name="postTitle" required></textarea>
+                
+                <label for="postContent">Post Content:</label>
                 <textarea id="postContent" name="postContent" required></textarea>
 
                 <label for="postCategory">Category:</label>
                 <select id="postCategory" name="postCategory">
-                    <option value="category1">Category 1</option>
-                    <option value="category2">Category 2</option>
+                    <option value="category1">Sale Item</option>
+                    <option value="category2">Service</option>
                     <!-- 其他類別選項 -->
                 </select>
 
@@ -110,10 +110,11 @@
             </form>
         </section>
     </main>
+</body>    
 
     <footer>
         <!-- 這裡可以放置頁腳內容 -->
-        <p>&copy; 2024 Your Website Name</p>
+        <p>&copy; 2024 Craiglist</p>
     </footer>
-</body>
+
 </html>
