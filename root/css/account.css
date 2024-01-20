@@ -49,3 +49,7 @@ section {
 section ul{
    line-height: 1.6; 
 }
+
+article a:link {
+    color: red;
+}

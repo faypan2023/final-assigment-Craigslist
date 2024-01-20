@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/main.css" type="text/css">
 </head>
 
+
 <body>
 <header>
         <!--  top navigation -->
@@ -83,103 +84,36 @@
         </div>
     </figure>
 </nav>
-    
-<!--
-    <nav>
-       <figure>
-           <img src="../images/" alt="event">
-           <figcaption>Events</figcaption>
-       </figure>
-       <figure>
-           <img src="../images/" alt="news">
-           <figcaption>News</figcaption>
-       </figure>
-       <figure>
-           <img src="../images/" alt="forSale">
-           <figcaption>For Sale</figcaption>
-       </figure>
-       <figure>
-           <img src="../images/" alt="recipy">
-           <figcaption>Recipy</figcaption>
-       </figure>
-       <figure>
-           <img src="../images/" alt="dating">
-           <figcaption>Dating</figcaption>
-       </figure>
-       <figure>
-           <img src="../images/" alt="lostAndFound">
-           <figcaption>Lost &amp Found</figcaption>
-       </figure>
-    </nav>
--->
 
-    
-</header>
+    <main>
+        <section>
+            <h2>New Post Details</h2>
+            <!-- 這裡可以放置表單，用於填寫新貼文的詳細信息 -->
+            <form action="process_post.php" method="post">
+                <!-- 表單項目，例如標題、內容、類別等 -->
+                <label for="postTitle">Title:</label>
+                <input type="text" id="postTitle" name="postTitle" required>
 
+                <label for="postContent">Content:</label>
+                <textarea id="postContent" name="postContent" required></textarea>
 
+                <label for="postCategory">Category:</label>
+                <select id="postCategory" name="postCategory">
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <!-- 其他類別選項 -->
+                </select>
 
-<main>
-   <article>
-    <section id="createPost">
-        <h1><a href="create_post.html">Create A Post</a></h1>
-        <ul>
-            <li><a href="create_post.html#addPost">Add A New Post</a></li>
-            <li><a href="create_post.html#editPost">Edit My Post</a></li>
-            <li><a href="create_post.html#postsHistory">Posts History</a></li>
-            <li><a href="create_post.html#managePosts">Manage My Posts</a></li>
-        </ul>
-    </section>
+                <!-- 其他表單項目 -->
 
-    <section id="likeAndViewItems">
-        <h1>Like &amp View Items</h1>
-        <ul>
-            <li>Liked Items</li>
-            <li>Saved Items</li>
-            <li>My View History</li>
-            <li>Transaction History</li>
-        </ul>
-    </section>
-
-    <section id="myProfile">
-        <h1><a href="my_profile.html">My Profile</a></h1>
-        <ul>
-            <li><a href="my_profile.html#editInfo">Edit My Information</a></li>
-            <li><a href="my_profile.html#deleteAccount">Delete My Account</a></li>
-        </ul>
-    </section>
-
-    <section id="myMessages">
-        <h1>My Message</h1>
-        <ul>
-            <li>View All Messages</li>
-            <li>Unread Messages</li>
-            <li>Archived Messages</li>
-            <li>Trash can</li>
-        </ul>
-    </section>
-</article>    
-</main>
-
-<footer>
-        <section class="bottomNav">
-            <p><a href="pages/policy.html">Policy</a></p>
-            <!-- linked to privacy policy page -->
-            <p><a href="pages/about.html">About</a></p><!-- linked to about page -->
-            <p><a href="pages/contact.html">Contact</a></p><!-- linked to contact page -->
-            <p><a href="pages/help.html">Help</a></p><!-- linked to help page -->
-            <p><a href="https://www.craigslist.org/about/craigslist_is_hiring">Hiring</a></p>
-            <a href="https://www.craigslistfund.org/" class="Foundation"><img src="../images/CraigslistFoundation.png" alt="charitableFund"></a>
-            <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="../images/Philanthropies.png" alt="newmarkPhilanthropies"></a>
+                <button type="submit">Submit Post</button>
+            </form>
         </section>
+    </main>
 
-        <section class="socialMedia">
-            <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook.gif" alt="facebook"></a>
-            <a href="https://twitter.com/craigslist_job"><img src="../images/twitter.gif" alt="twitter"></a>
-            <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins.gif" alt="instagram"></a>
-            <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin.gif" alt="linkedin"></a>
-        </section>
+    <footer>
+        <!-- 這裡可以放置頁腳內容 -->
+        <p>&copy; 2024 Your Website Name</p>
     </footer>
-
-
 </body>
 </html>
