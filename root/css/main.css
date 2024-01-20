@@ -19,10 +19,11 @@ html {
     --purpleblue-color: #40539f;
     --yellow-color: #edbe2c;
     --blue-color: #3660a1;
+    --grey-color: #949599;
     /* helper */
     --spacer: 1rem;
     --db-spacer: calc(var(--spacer)*2);
-    --border-radius: 6px;
+    --border-radius: 28px;
 }
 
 body {
@@ -40,16 +41,16 @@ img {
 /* top navigation style*/
 .topNav {
     display: flex;
-    gap: var(--db-spacer);
+    gap: 2rem;
     align-items: center;
     justify-content: flex-end;
     background-color: var(--nav-blue-color);
-    padding: calc(var(--spacer)*1.3) var(--db-spacer);
+    padding: 1.3rem calc(var(--spacer)*2);
 }
 
 .logo {
     display: flex;
-    gap: var(--spacer);
+    gap: 1rem;
     align-items: center;
     margin-right: auto;
 }
@@ -58,7 +59,7 @@ img {
     font-family: var(--logo-font);
     font-size: calc(var(--font-size)*1.5);
     color: white;
-    margin-right: var(--db-spacer);
+    margin-right: 2rem;
 }
 
 /* languageselect style */
@@ -100,7 +101,7 @@ img {
 /* searchbar style */
 .searchbar {
     display: block;
-    margin: 4rem 2rem; 
+    margin: 4rem 1rem;
 }
 
 .searchBox {
@@ -108,10 +109,10 @@ img {
     align-items: center;
     background-color: transparent;
     padding: 8px;
-    border-radius: 28px;
+    border-radius: var(--border-radius);
     border: 2px solid var(--blue-color);
-    max-width:700px;
-    margin:auto;
+    max-width: 700px;
+    margin: auto;
 }
 
 .locationDropdown {
@@ -158,7 +159,7 @@ input {
 
 /*icons navigation style*/
 h2 {
-    margin: 2rem;
+    margin: calc(var(--spacer)*2);
     color: var(--purpleblue-color);
 }
 
@@ -203,17 +204,18 @@ main h3 {
 
 main figure p {
     color: var(--darkblue-color);
-    font-size: 1.2rem;
+    font-size: calc(var(--font-size)*0.75);
 }
 
 article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    gap: 1.5rem;
+    gap: calc(var(--spacer)*1.5);
     margin: auto 3rem;
 }
 
+/*button pseudo class*/
 .button:link {
     width: 110px;
     height: auto;
@@ -221,12 +223,12 @@ article {
     color: white;
     text-decoration: none;
     border-radius: var(--border-radius);
-    padding: .5rem 1rem;
+    padding: .5rem 2rem;
 }
 
 .button:visited {
     background-color: var(--blue-color);
-    color: #949599;
+    color: var(--grey-color)
 }
 
 .button:hover {
@@ -234,7 +236,7 @@ article {
     color: var(--yellow-color);
 }
 
-#seeMore {
+.seeMore {
     margin: 1rem auto 1rem 0;
 }
 
@@ -242,7 +244,7 @@ article {
 /*footer section*/
 footer {
     background-color: var(--nav-blue-color);
-    padding: calc(var(--db-spacer)*2) var(--db-spacer);
+    padding: 4rem 2rem;
 }
 
 .bottomNav {
@@ -250,7 +252,9 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
+    align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .Foundation {
@@ -265,20 +269,22 @@ footer {
 
 .socialMedia {
     text-align: center;
-    padding: 1rem;
+    /*  padding: 1rem; */
 }
 
 .socialMedia img {
-    width: 35px;
+    width: 55px;
+    padding: 0 1rem;
 }
 
+/*pseudo class*/
 a:link {
     color: white;
     text-decoration: none;
 }
 
 a:visited {
-    color: #949599;
+    color: var(--grey-color);
 }
 
 a:hover {
@@ -288,9 +294,17 @@ a:hover {
 
 /*media queries*/
 @media screen and (min-width: 600px) {
+    :root {
+        --font-size: 2rem;
+        --line-height: 2rem;
+        --spacer: 2rem;
+    }
 
-    .searchbar,
-    h2 {
+    .cityDropdown {
+        width: 100px;
+    }
+
+    .searchbar {
         margin: 4rem;
     }
 
@@ -304,15 +318,11 @@ a:hover {
 
     article {
         margin: auto 12rem;
-        /*align the see more button and amin content*/
-        gap: 3rem;
+        /*align the see more button and main content*/
     }
 }
 
 @media screen and (min-width: 800px) {
-    .topNav {
-        padding: calc(var(--spacer)*1.3) calc(var(--db-spacer)*2);
-    }
 
     .searchbar,
     h2 {
@@ -336,13 +346,11 @@ a:hover {
         max-width: 1400px;
         margin: auto;
     }
-}
 
-
-/*  
-@media screen and (min-width: 1000px) {
-    :root {
-        --font-size: 1.5rem;
-        --line-height: 1.5rem;
+    footer {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
     }
-} */
+}
