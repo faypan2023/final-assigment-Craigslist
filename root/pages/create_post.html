@@ -43,7 +43,7 @@
     
      
 <!--     Home link to Home link-->
-     <h2><a href="../index.html">Home</a> > <a href="account.html">Account</a></h2>
+     <h2><a href="../index.html">Home</a> > <a href="account.html">Account</a> > Create A Post</h2>
      
 <!--  icons navigation -->        
          <nav>
@@ -87,22 +87,30 @@
 
     <main>
         <section>
-            <h2>New Post Details</h2>
+            <h2 class="NewPostDetails">New Post Details</h2>
 <!--            form content-->
             <form action="process_post.php" method="post">
 <!--                form-->
+               
+               <label for="postCategory">Post Category:</label>
+                <select id="postCategory" name="postCategory">
+                    <option value="category1">Sale Items</option>
+                    <option value="category2">Searching for Service</option>
+                    <option value="category3">Job Searching</option>
+                    <option value="category4">Housing</option>
+                    <option value="category5">Pet Searching</option>
+                    <option value="category6">Local</option>
+                    <option value="category7">Others</option>
+                    
+<!--                    others-->
+                </select>
                 <label for="postTitle">Post Title:</label>
                 <textarea id="postTitle" name="postTitle" required></textarea>
                 
                 <label for="postContent">Post Content:</label>
                 <textarea id="postContent" name="postContent" required></textarea>
 
-                <label for="postCategory">Category:</label>
-                <select id="postCategory" name="postCategory">
-                    <option value="category1">Sale Item</option>
-                    <option value="category2">Service</option>
-<!--                    others-->
-                </select>
+                
 
                 <button type="submit">Submit Post</button>
             </form>
@@ -111,7 +119,23 @@
 </body>    
 
     <footer>
-        <p>&copy; 2024 Craiglist</p>
+        <section class="bottomNav">
+            <p><a href="pages/policy.html">Policy</a></p>
+            <!-- linked to privacy policy page -->
+            <p><a href="pages/about.html">About</a></p><!-- linked to about page -->
+            <p><a href="pages/contact.html">Contact</a></p><!-- linked to contact page -->
+            <p><a href="pages/help.html">Help</a></p><!-- linked to help page -->
+            <p><a href="https://www.craigslist.org/about/craigslist_is_hiring">Hiring</a></p>
+            <a href="https://www.craigslistfund.org/" class="Foundation"><img src="../images/CraigslistFoundation.png" alt="charitableFund"></a>
+            <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="../images/Philanthropies.png" alt="newmarkPhilanthropies"></a>
+        </section>
+
+        <section class="socialMedia">
+            <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook.gif" alt="facebook"></a>
+            <a href="https://twitter.com/craigslist_job"><img src="../images/twitter.gif" alt="twitter"></a>
+            <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins.gif" alt="instagram"></a>
+            <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin.gif" alt="linkedin"></a>
+        </section>
     </footer>
 
 </html>

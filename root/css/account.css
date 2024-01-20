@@ -53,3 +53,9 @@ section ul{
 article a:link {
     color: red;
 }
+
+.NewPostDetails {
+    color: black;
+    font-weight: bold;
+    
+}
