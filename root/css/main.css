@@ -173,8 +173,9 @@ header {
     padding-bottom: 1rem;
 }
 
-figcaption {
+nav figcaption {
     font-weight: 600;
+    font-size: 1.3rem;
 }
 
 /*main section*/
@@ -182,7 +183,11 @@ main h1 {
     font-size: calc(var(--font-size)*1.5);
     font-weight: 700;
     text-align: center;
-    margin: 2rem auto;
+    margin: 6rem auto 4rem;
+}
+
+main figcaption {
+    font-weight: 600;
 }
 
 main h3 {
@@ -198,13 +203,12 @@ main figure p {
 article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr) auto; */
     justify-items: center;
-    gap: 1rem;
-    /* border: 1px red solid; */
-    margin: 2rem;
+    gap: 1.5rem;
+    border: 1px red solid;
+    margin: 2rem 3rem;
 }
-
-
 
 .button:link {
     width: 110px;
@@ -227,7 +231,8 @@ article {
 }
 
 #seeMore {
-    margin: 0 auto 4rem 4rem;
+    margin-right: auto;
+    margin-top: 1rem;
 }
 
 
@@ -260,6 +265,10 @@ footer {
     padding: 1rem;
 }
 
+.socialMedia img {
+    width: 35px;
+}
+
 a:link {
     color: white;
     text-decoration: none;
@@ -272,3 +281,74 @@ a:visited {
 a:hover {
     color: var(--yellow-color);
 }
+
+
+/*media queries*/
+@media screen and (min-width: 600px) {
+
+    .searchbar,
+    h2 {
+        margin: 4rem;
+    }
+
+    nav figcaption {
+        font-size: var(--font-size);
+    }
+
+    nav {
+        gap: 4rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .searchbar,
+    h2 {
+        margin: 4rem 10rem;
+    }
+}
+
+/*  {
+    header div {
+        display: block;
+        height: 600px;
+        width: auto;
+        set the size of the container
+        background-image: url(../images/hero1500.jpg);
+        background-size: cover;
+        control the position of the background image.
+        background-position: center;
+        margin-bottom: 7rem;
+    }
+
+    .stars img {
+        width: 80px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: var(--padding-spacer) auto;
+    }
+
+    .lianhua {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: var(--padding-spacer) auto;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    :root {
+        --font-size: 1.5rem;
+        --line-height: 1.5rem;
+    }
+} */
