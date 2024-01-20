@@ -100,7 +100,7 @@ img {
 /* searchbar style */
 .searchbar {
     display: block;
-    margin: 4rem 2rem;
+    margin: 4rem 2rem; 
 }
 
 .searchBox {
@@ -110,6 +110,8 @@ img {
     padding: 8px;
     border-radius: 28px;
     border: 2px solid var(--blue-color);
+    max-width:700px;
+    margin:auto;
 }
 
 .locationDropdown {
@@ -179,11 +181,15 @@ nav figcaption {
 }
 
 /*main section*/
+main {
+    margin: 6rem auto;
+}
+
 main h1 {
     font-size: calc(var(--font-size)*1.5);
     font-weight: 700;
     text-align: center;
-    margin: 6rem auto 4rem;
+    margin: 5rem auto 3rem;
 }
 
 main figcaption {
@@ -203,11 +209,9 @@ main figure p {
 article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(2, 1fr) auto; */
     justify-items: center;
     gap: 1.5rem;
-    border: 1px red solid;
-    margin: 2rem 3rem;
+    margin: auto 3rem;
 }
 
 .button:link {
@@ -231,8 +235,7 @@ article {
 }
 
 #seeMore {
-    margin-right: auto;
-    margin-top: 1rem;
+    margin: 1rem auto 1rem 0;
 }
 
 
@@ -298,54 +301,45 @@ a:hover {
     nav {
         gap: 4rem;
     }
+
+    article {
+        margin: auto 12rem;
+        /*align the see more button and amin content*/
+        gap: 3rem;
+    }
 }
 
 @media screen and (min-width: 800px) {
+    .topNav {
+        padding: calc(var(--spacer)*1.3) calc(var(--db-spacer)*2);
+    }
 
     .searchbar,
     h2 {
         margin: 4rem 10rem;
     }
-}
 
-/*  {
-    header div {
-        display: block;
-        height: 600px;
-        width: auto;
-        set the size of the container
-        background-image: url(../images/hero1500.jpg);
-        background-size: cover;
-        control the position of the background image.
-        background-position: center;
-        margin-bottom: 7rem;
-    }
-
-    .stars img {
-        width: 80px;
-    }
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin: var(--padding-spacer) auto;
-    }
-
-    .lianhua {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        margin: var(--padding-spacer) auto;
-    }
-
-    .photos {
-        display: grid;
+    article {
         grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        max-width: 1150px;
+        margin: auto 5rem;
     }
 }
 
+@media screen and (min-width: 1170px) {
+    main {
+        max-width: 1170px;
+    }
+
+    header,
+    footer {
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+
+
+/*  
 @media screen and (min-width: 1000px) {
     :root {
         --font-size: 1.5rem;
