@@ -161,6 +161,7 @@ input {
 h2 {
     margin: calc(var(--spacer)*2);
     color: var(--purpleblue-color);
+    font-size: calc(var(--font-size)*1.3);
 }
 
 nav {

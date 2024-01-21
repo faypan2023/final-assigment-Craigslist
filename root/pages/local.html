@@ -8,64 +8,285 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- end google fonts -->
     <title>Craigslist--local life service platform--localpage</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <style>
+        /*local page navigation style*/
+        .localNav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .localNav figure {
+            flex: 0 0 calc(25% - 20px);
+            /* Adjust the width and margin based on your preference */
+            margin: 10px;
+        }
+
+    </style>
 </head>
 
 <body>
-<header>
-    <!--  top navigation -->
-    <section>
-        <div>
-            <img src="images/logo.gif" alt="logo">
-            <h1>Craigslist</h1>
-        </div>
-        <img src="images/lan.gif" alt="lan">
-        <img src="images/post.gif" alt="post">
-        <img src="images/login.gif" alt="login">
-    </section>
-     <!--  search bar -->
-    <section>
-      
-    </section>
-     <!--  icons navigation -->
-     <h2>Home > Local</h2>
-    <nav>
-       <figure>
-           <img src="images/" alt="event">
-           <figcaption>Events</figcaption>
-       </figure>
-       <figure>
-           <img src="images/" alt="news">
-           <figcaption>News</figcaption>
-       </figure>
-       <figure>
-           <img src="images/" alt="forSale">
-           <figcaption>For Sale</figcaption>
-       </figure>
-       <figure>
-           <img src="images/" alt="recipy">
-           <figcaption>Recipy</figcaption>
-       </figure>
-       <figure>
-           <img src="images/" alt="dating">
-           <figcaption>Dating</figcaption>
-       </figure>
-       <figure>
-           <img src="images/" alt="lostAndFound">
-           <figcaption>Lost &amp Found</figcaption>
-       </figure>
-    </nav>
-</header>
-<main>
-    
-</main>
-<footer>
-    
-</footer>
+    <header>
+        <!--  top navigation -->
+        <section class="topNav">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                <h1>Craigslist</h1>
+                <div class="dropdown">
+                    <img src="../images/lan.gif" alt="Custom Image" id="dropdownBtn">
+                    <select class="dropdownContent" id="languageSelect">
+                        <option value="english" class="english"><img src="../images/lan.gif" alt="Custom Image"></option>
+                        <option value="spanish">español</option>
+                        <option value="french">français</option>
+                        <option value="italian">Italiano</option>
+                        <option value="korean">한국말</option>
+                        <option value="chinese" class="chinese">中文</option>
+                    </select>
+                </div>
+            </div>
+            <a href="https://post.craigslist.org/k/gLHCJxiz7hG_hu23NiS7Xg/443vb?s=subarea"> <img src="../images/post.png" alt="post"></a><!-- linked to "creat post" page -->
+            <a href="#"><img src="../images/login.png" alt="login"></a><!-- linked to account page -->
+        </section>
+
+        <!--  search bar -->
+        <section class="searchbar">
+            <div class="searchBox">
+                <div class="locationDropdown">
+                    <img src="../images/locationIcon.png" alt="Location Icon" id="locationIcon">
+                    <select class="cityDropdown" id="citySelect">
+                        <option value="San Diego">San Diego</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="| Search...">
+                <img src="../images/searchbar.png" alt="Search Icon" class="searchBtn">
+            </div>
+        </section>
+
+
+        <!--  icons navigation -->
+        <h2><a href="../index.html">Home </a>> Local</h2>
+        <nav class="localNav">
+            <figure>
+                <a href="https://sandiego.craigslist.org/search/eve?lang=fr&cc=fr"><img src="../images/events.png" alt="event"></a>
+                <figcaption>Events</figcaption>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/search/vnn#search=1~list~0~0"><img src="../images/news.png" alt="news"></a>
+                <figcaption>News</figcaption>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/search/sss#search=1~gallery~0~0"><img src="../images/forSale.png" alt="forSale"></a>
+                <figcaption>For Sale</figcaption>
+            </figure>
+            <figure>
+                <a href="https://forums.craigslist.org/?areaID=8&forumID=22"> <img src="../images/recipy.png" alt="recipy"></a>
+                <figcaption>Recipy</figcaption>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/search/rnr?lang=fr&cc=fr"><img src="../images/dating.png" alt="dating"></a>
+                <figcaption>Dating</figcaption>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/search/laf#search=1~list~0~0"><img src="../images/lostAndFound.png" alt="lostAndFound"></a>
+                <figcaption>Lost &amp；Found</figcaption>
+            </figure>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Events</h1>
+        <article>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/rvd/d/chula-vista-huge-sale-2019-thor/7707215218.html?lang=fr&cc=fr"><img src="../images/events1.jpg" alt="blackFridaySale"></a>
+                <figcaption>Black Friday Sale</figcaption>
+                <p>Nov.24</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/eve/d/san-diego-san-diego-bird-festival/7708793786.html"><img src="../images/events2.jpg" alt="birdFestival"></a>
+                <figcaption>Bird Festival</figcaption>
+                <p>Jan.21</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/eve/d/san-diego-the-city-of-san-diego-public/7709255113.html"><img src="../images/events3.jpg" alt="careerFair"></a>
+                <figcaption>Public Utilities Career Fair</figcaption>
+                <p>Feb.26</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/eve/d/poway-rock-roll-2024/7708604476.html"><img src="../images/events4.jpg" alt="rock'NRoll"></a>
+                <figcaption>Rock 'N Roll 2024</figcaption>
+                <p>Jan.27</p>
+            </figure>
+            <p class="seeMore"><a href="https://sandiego.craigslist.org/search/eve?lang=fr&cc=fr" class="button">See More >></a></p>
+        </article>
+
+        <h1>News</h1>
+        <article>
+            <figure>
+                <a href="https://losangeles.craigslist.org/wst/act/d/west-hollywood-seeking-hiking-activity/7700529225.html"><img src="../images/news1.jpg" alt="hikingPartner"></a>
+                <figcaption>Hiking Partner</figcaption>
+                <p>Jan.7</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/ats/d/chula-vista-multi-purpose-art-studio/7708897305.html"><img src="../images/news2.jpg" alt="artStudio"></a>
+                <figcaption>Art Studio</figcaption>
+                <p>Jan.18</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/esd/grp/d/spring-valley-tennis-group-for-new-and/7702448790.html"><img src="../images/bests4.jpg" alt="tennisGroup"></a>
+                <figcaption>Tennis Group</figcaption>
+                <p>Jan.15</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/muc/d/la-jolla-free-bluegrass-concert-grammy/7703629436.html"><img src="../images/news4.jpg" alt="bluegrassConcert"></a>
+                <figcaption>Bluegrass Concert</figcaption>
+                <p>Jan.2</p>
+            </figure>
+            <p class="seeMore"><a href="https://sandiego.craigslist.org/search/vnn#search=1~list~0~0" class="button">See More >></a></p>
+        </article>
+
+        <h1>For Sale</h1>
+        <article>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/mcy/d/el-centro-2007-road-king-harley-davidson/7708843698.html"><img src="../images/forSale1.jpg" alt="harleyDavidson"></a>
+                <figcaption>2007 Harley Davidson</figcaption>
+                <div>
+                    <h3>$11000</h3>
+                    <p>El centro, 92108</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/ctd/d/san-diego-2015-toyota-rav4-xle/7709486546.html"><img src="../images/forSale2.jpg" alt="toyotaCar"></a>
+                <figcaption>2015 Toyota</figcaption>
+                <div>
+                    <h3>$16750</h3>
+                    <p>Escondido, 92120</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/pho/d/la-mesa-canon-t4i-camera/7702336202.html"><img src="../images/forSale3.jpg" alt="canonCamera"></a>
+                <figcaption>Canon Camera</figcaption>
+                <div>
+                    <h3>$300</h3>
+                    <p>La Mesa, 92125</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/mob/d/san-diego-iphone-14-pro-max/7708090956.html"><img src="../images/forSale4.jpg" alt="iphone14"></a>
+                <figcaption>Used iphone 14</figcaption>
+                <div>
+                    <h3>$450</h3>
+                    <p>San Diego, 92108</p>
+                </div>
+            </figure>
+            <p class="seeMore"><a href="https://sandiego.craigslist.org/search/sss#search=1~gallery~0~0" class="button">See More >></a></p>
+        </article>
+
+        <h1>Recipy</h1>
+        <article>
+            <figure>
+                <a href="https://forums.craigslist.org/?ID=329462592"><img src="../images/recipy1.jpg" alt="Pizza"></a>
+                <figcaption>Pizza</figcaption>
+                <p>Nov.24</p>
+            </figure>
+            <figure>
+                <a href="https://forums.craigslist.org/?ID=327842510"><img src="../images/recipy2.jpg" alt="Taco"></a>
+                <figcaption>Taco</figcaption>
+                <p>Mar.01</p>
+            </figure>
+            <figure>
+                <a href="https://forums.craigslist.org/?ID=322611413"><img src="../images/recipy3.jpg" alt="ahiTuna"></a>
+                <figcaption>Ahi Tuna</figcaption>
+                <p>Oct.17</p>
+            </figure>
+            <figure>
+                <a href="https://forums.craigslist.org/?ID=329029435"><img src="../images/recipy4.jpg" alt="Steak"></a>
+                <figcaption>Steak</figcaption>
+                <p>Apr.12</p>
+            </figure>
+            <p class="seeMore"><a href="https://forums.craigslist.org/?areaID=8&forumID=22" class="button">See More >></a></p>
+        </article>
+
+        <h1>Dating</h1>
+        <article>
+            <figure>
+                <a href="https://sandiego.craigslist.org/esd/com/d/el-cajon-need-friends/7708583048.html"><img src="../images/dating1.jpg" alt="Asheley"></a>
+                <figcaption>Asheley</figcaption>
+                <p>25 Years Old</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/esd/grp/d/santee-friends-group-lunch-group-now/7702110075.html"><img src="../images/dating2.jpg" alt="Monica"></a>
+                <figcaption>Monica</figcaption>
+                <p>28 Years Old</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/com/d/escondido-needs-friends/7708654694.html"><img src="../images/dating3.jpg" alt="David"></a>
+                <figcaption>David</figcaption>
+                <p>23 Years Old</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/esd/mis/d/el-cajon-looking-for-female-friend/7701190145.html"><img src="../images/dating4.jpg" alt="Ryan"></a>
+                <figcaption>Ryan</figcaption>
+                <p>28 Years Old</p>
+            </figure>
+            <p class="seeMore"><a href="https://sandiego.craigslist.org/search/rnr?lang=fr&cc=fr" class="button">See More >></a></p>
+        </article>
+
+        <h1>Lost &amp； Found</h1>
+        <article>
+            <figure>
+                <a href="https://sandiego.craigslist.org/ssd/laf/d/san-diego-lost-cat-meechie/7707970924.html"><img src="../images/lostAndFound1.jpg" alt="lostCat"></a>
+                <figcaption>Lost Cat Meechie </figcaption>
+                <p>Jan.13</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/esd/pet/d/spring-valley-lost-my-dog-looks-like/7709574571.html"><img src="../images/lostAndFound2.jpg" alt="lostDog"></a>
+                <figcaption>Lost Dog Kiko</figcaption>
+                <p>Jan.19</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/laf/d/san-diego-lost-keys-in-carmel-valley/7709632029.html"><img src="../images/lostAndFound3.jpg" alt="lostKeys"></a>
+                <figcaption>Lost Keys</figcaption>
+                <p>Jan.19</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/laf/d/spring-valley-lost-my-wallet-in-san/7708187710.html"><img src="../images/lostAndFound4.jpg" alt="lostWallet"></a>
+                <figcaption>Lost Wallet</figcaption>
+                <p>Jan.16</p>
+            </figure>
+            <p class="seeMore"><a href="https://sandiego.craigslist.org/search/laf#search=1~list~0~0" class="button">See More >></a></p>
+        </article>
+
+    </main>
+
+    <footer>
+        <section class="bottomNav">
+            <p><a href="pages/policy.html">Policy</a></p>
+            <!-- linked to privacy policy page -->
+            <p><a href="pages/about.html">About</a></p><!-- linked to about page -->
+            <p><a href="pages/contact.html">Contact</a></p><!-- linked to contact page -->
+            <p><a href="pages/help.html">Help</a></p><!-- linked to help/FAQ page -->
+            <p><a href="https://www.craigslist.org/about/craigslist_is_hiring">Hiring</a></p>
+            <a href="https://www.craigslistfund.org/" class="Foundation"><img src="../images/CraigslistFoundation.png" alt="charitableFund"></a>
+            <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="../images/Philanthropies.png" alt="newmarkPhilanthropies"></a>
+        </section>
+
+        <section class="socialMedia">
+            <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook-55.png" alt="facebook"></a>
+            <a href="https://twitter.com/craigslist_job"><img src="../images/twitter-55.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins-55.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin-55.png" alt="linkedin"></a>
+        </section>
+    </footer>
 
 </body>
+
 </html>
