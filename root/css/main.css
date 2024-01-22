@@ -19,7 +19,6 @@ html {
     --purpleblue-color: #40539f;
     --yellow-color: #edbe2c;
     --blue-color: #3660a1;
-    --grey-color: #949599;
     /* helper */
     --spacer: 1rem;
     --db-spacer: calc(var(--spacer)*2);
@@ -90,6 +89,7 @@ img {
     height: 100%;
     border: none;
     text-align: center;
+    color:transparent;/*hide the text*/
     cursor: pointer;
     outline: none;
     /*remove the default focus outline*/
@@ -136,12 +136,16 @@ img {
     font-size: var(--font-size);
     font-family: var(--primary-font);
     background-color: transparent;
-    width: 80px;
+    /* width: 90px; */
+    width:auto;
+    height:auto;
 }
 
 input {
-    flex: 1;
+    flex: 1; 
     /*will take all the left space*/
+    min-width:0;
+    /*Ensure that the content does not overflow the screen.*/
     border: none;
     padding: 8px;
     outline: none;
@@ -193,7 +197,9 @@ main h1 {
     text-align: center;
     margin: 5rem auto 3rem;
 }
-
+main figure {
+            margin:0;
+        }
 main figcaption {
     font-weight: 600;
 }
@@ -201,11 +207,13 @@ main figcaption {
 main h3 {
     color: var(--orange-color);
     font-weight: 500;
+    margin:0.55rem auto;
 }
 
 main figure p {
     color: var(--darkblue-color);
     font-size: calc(var(--font-size)*0.75);
+    margin:0 auto;
 }
 
 article {
@@ -218,8 +226,6 @@ article {
 
 /*button pseudo class*/
 .button:link {
-    width: 110px;
-    height: auto;
     background-color: var(--purpleblue-color);
     color: white;
     text-decoration: none;
@@ -229,7 +235,7 @@ article {
 
 .button:visited {
     background-color: var(--blue-color);
-    color: var(--grey-color)
+    color:#c9cace;
 }
 
 .button:hover {
@@ -238,7 +244,10 @@ article {
 }
 
 .seeMore {
+   min-width:118px; 
+    height: auto;
     margin: 1rem auto 1rem 0;
+    grid-column:span 2;
 }
 
 
@@ -272,20 +281,20 @@ footer {
     text-align: center;
     /*  padding: 1rem; */
 }
-
-.socialMedia img {
-    width: 55px;
-    padding: 0 1rem;
+.socialMedia img{
+    width: 40px;
+    margin-right:10px;
 }
+
 
 /*pseudo class*/
 a:link {
-    color: white;
+    color: var(--purpleblue-color);
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--grey-color);
+    color: #949599;
 }
 
 a:hover {
@@ -319,8 +328,11 @@ a:hover {
 
     article {
         margin: auto 12rem;
-        /*align the see more button and main content*/
+        /*align the "see more" button and main content*/
     }
+    .socialMedia img{
+    width:55px;
+   } 
 }
 
 @media screen and (min-width: 800px) {
