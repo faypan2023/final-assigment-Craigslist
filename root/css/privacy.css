@@ -1,0 +1,33 @@
+p { 
+    padding: 1rem;
+}
+
+#policyLinks {
+    text-align: center;
+}
+
+b {
+    font-weight: bold;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+table, td {
+    padding: 1rem;
+    border: solid 1px #3660a1;
+}
+
+ol, ul {
+    padding-left: 4rem;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: circle;
+}

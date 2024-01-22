@@ -1,0 +1,8 @@
+p {
+    padding: 1rem;
+}
+
+ul {
+    list-style: circle;
+    margin-left: 5rem;
+}

@@ -1,0 +1,29 @@
+:root {
+    --columns: 1fr;
+    --rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#principles {
+    text-align: center;
+}
+
+#principlesList {
+    display: grid;
+    grid-template-columns: var(--columns);
+    grid-template-rows: var(--rows);
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+#principlesList div {
+    border: solid 2px #3660a1;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    :root { 
+        --columns: 1fr 1fr 1fr;
+        --rows: 1fr 1fr;
+    }
+}
