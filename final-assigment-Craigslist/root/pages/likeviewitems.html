@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- end google fonts -->
+    <title>Craigslist--local life service platform--liked/viewed items</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/likeviewitems.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <!--  top navigation -->
+        <section class="topNav">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                <h1>Craigslist</h1>
+                <!-- <img src="images/lan.gif" alt="lan"> -->
+                <div class="dropdown">
+                    <img src="../images/lan.gif" alt="Custom Image" id="dropdownBtn">
+                    <select class="dropdownContent" id="languageSelect">
+                        <option value="english" class="english"><img src="../images/lan.gif" alt="Custom Image"></option>
+                        <option value="spanish">español</option>
+                        <option value="french">français</option>
+                        <option value="italian">Italiano</option>
+                        <option value="korean">한국말</option>
+                        <option value="chinese" class="chinese">中文</option>
+                    </select>
+                </div>
+            </div>
+            <a href="../pages/likeviewitems.html"> <img src="../images/post.png" alt="post"></a>
+            <a href="../pages/loginmessage.html"><img src="../images/login.png" alt="login"></a><!-- linked to account page -->
+        </section>
+
+        <!--  search bar -->
+        <section class="searchbar">
+            <div class="searchBox">
+                <div class="locationDropdown">
+                    <img src="../images/locationIcon.png" alt="Location Icon" id="locationIcon">
+                    <select class="cityDropdown" id="citySelect">
+                        <option value="San Diego" disabled selected hidden>San Diego</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="| Search...">
+                <img src="../images/searchbar.png" alt="Search Icon" class="searchBtn">
+            </div>
+        </section>
+
+
+        <!--  icons navigation -->
+        <h2><a href="../index.html">Home ></a> My Account >> Like and View Items >>></h2>
+        <nav>
+            <figure>
+                <a href="../pages/local.html"><img src="../images/icons1.png" alt="local"></a><!-- linked to local page -->
+                <figcaption>Local</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/jobs.html"><img src="../images/icons2.png" alt="jobs"></a><!-- linked to jobs page -->
+                <figcaption>Jobs</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/housing.html"><img src="../images/icons3.png" alt="housing"></a><!-- linked to housing page -->
+                <figcaption>Housing</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/service.html"> <img src="../images/icons4.png" alt="service"></a><!-- linked to service page -->
+                <figcaption>Service</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/pets.html"><img src="../images/icons5.png" alt="pets"></a><!-- linked to pets page -->
+                <figcaption>Pets</figcaption>
+            </figure>
+        </nav>
+    </header>
+
+    <main>
+        <h1><span class="material-symbols-outlined">
+favorite
+</span>LOVED Posts</h1>
+        
+        <article id="details">
+            <figure>
+                <a href="../pages/details.html"><img src="../images/best1large.jpg" alt="clairemont"></a>
+                    <figcaption>Condo for Rent
+                    <h3>$3100</h3>
+                    <h4>Clairemont</h4>
+                    </figcaption>
+             </figure>
+             
+             <figure>
+                <a href="../pages/details.html"><img src="../images/tuxedos.webp" alt="tuxedo cats"></a>
+                    <figcaption>Adopt a Kitty!
+                    <h3>$100</h3>
+                    <h4>Hillcrest</h4>
+                    </figcaption>
+             </figure>
+             
+             <figure>
+                <a href="../pages/details.html"><img src="../images/ariel.webp" alt="clairemont"></a>
+                    <figcaption>The Little Mermaid movie tickets
+                    <h3>$20</h3>
+                    <h4>La Jolla</h4>
+                    </figcaption>
+             </figure>
+             
+         <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article>
+        
+        <h1><span class="material-symbols-outlined">thumb_up</span>Liked Posts</h1>
+            <article id="related">
+                <figure>
+                    <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-enjoy-incredible-views-at-imt/7705614447.html"><img src="../images/newest1.jpg" alt="missionValley"></a>
+                <figcaption>Mission Valley</figcaption>
+                    <h3>$2350</h3>
+                    <p>San Diego, 92108</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-do-not-look-past-this-three/7706144076.html"><img src="../images/newest2.jpg" alt="eastVillage"></a>
+                <figcaption>East Village</figcaption>
+                    <h3>$4635</h3>
+                    <p>San Diego, 92101</p>
+            </figure>
+            <figure>
+                <a href="https://orangecounty.craigslist.org/mcd/d/chatsworth-2013-yamaha-stryker-twin-1304/7705795361.html"><img src="../images/newest3.jpg" alt="yamahaStryker"></a>
+                <figcaption>2013 Yamaha Stryker</figcaption>
+                    <h3>$7995</h3>
+                    <p>Chatsworth, 91311</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/act/d/san-diego-free-softball-group-needs/7703426995.html"><img src="../images/newest4.jpg" alt="softballGroup"></a>
+                <figcaption>Softball Group lessons</figcaption>
+                <h3>$200 p/season</h3>
+                <p>Oct.17</p>
+            </figure>
+            <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article>
+        
+        <h1><span class="material-symbols-outlined">youtube_searched_for</span>Viewed Posts</h1>
+        <article id="newest">
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-enjoy-incredible-views-at-imt/7705614447.html"><img src="../images/bests3.jpg" alt="missionValley"></a>
+                <figcaption>Prince guitars</figcaption>
+                    <h3>$2350</h3>
+                    <p>San Diego, 92108</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-do-not-look-past-this-three/7706144076.html"><img src="../images/bests2.jpg" alt="eastVillage"></a>
+                <figcaption>2018 Honda Accord</figcaption>
+                    <h3>$4635</h3>
+                    <p>San Diego, 92101</p>
+            </figure>
+            <figure>
+                <a href="https://orangecounty.craigslist.org/mcd/d/chatsworth-2013-yamaha-stryker-twin-1304/7705795361.html"><img src="../images/bests4.jpg" alt="yamahaStryker"></a>
+                <figcaption>Tennis lessons</figcaption>
+                    <h3>$79 p/lesson</h3>
+                    <p>Cardiff, 91311</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/act/d/san-diego-free-softball-group-needs/7703426995.html"><img src="../images/ferry.webp" alt="softballGroup"></a>
+                <figcaption>Ferryboat ride</figcaption>
+                 <h3>$10 p/person</h3>
+                <p>New York, New York</p>
+            </figure>
+            <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article>
+        
+        <h1><span class="material-symbols-outlined">
+contact_mail
+</span>My Posts</h1>
+      
+      <article id="newest">
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-enjoy-incredible-views-at-imt/7705614447.html"><img src="../images/furcoat.jpg" alt="furcoat"></a>
+                <figcaption>Fur coat for sale</figcaption>
+                    <h3>$200</h3>
+                    <p>San Diego, 92108</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-do-not-look-past-this-three/7706144076.html"><img src="../images/yoga.jpg" alt="yoga"></a>
+                <figcaption>Yoga lessons</figcaption>
+                    <h3>$Donation-based</h3>
+                    <p>Ocean Beach, 92109</p>
+            </figure>
+            <figure>
+                <a href="https://orangecounty.craigslist.org/mcd/d/chatsworth-2013-yamaha-stryker-twin-1304/7705795361.html"><img src="../images/edc.jpg" alt="edc"></a>
+                <figcaption>Selling EDC tickets</figcaption>
+                    <h3>$500</h3>
+                    <p>Hillcrest, 91311</p>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/act/d/san-diego-free-softball-group-needs/7703426995.html"><img src="../images/coding.jpg" alt="coding"></a>
+                <figcaption>Coding job search</figcaption>
+                 <h3>$30 p/hour</h3>
+                <p>Anywhere, anytime</p>
+            </figure>
+            <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article> 
+        
+    </main>
+
+    <footer>
+        <section class="bottomNav">
+            <p><a href="pages/policy.html">Policy</a></p>
+            <!-- linked to privacy policy page -->
+            <p><a href="pages/about.html">About</a></p><!-- linked to about page -->
+            <p><a href="pages/contact.html">Contact</a></p><!-- linked to contact page -->
+            <p><a href="pages/help.html">Help</a></p><!-- linked to help page -->
+            <p><a href="https://www.craigslist.org/about/craigslist_is_hiring">Hiring</a></p>
+            <a href="https://www.craigslistfund.org/" class="Foundation"><img src="../images/CraigslistFoundation.png" alt="charitableFund"></a>
+            <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="../images/Philanthropies.png" alt="newmarkPhilanthropies"></a>
+        </section>
+
+            <section class="socialMedia">
+                <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook-55.png" alt="facebook"></a>
+                <a href="https://twitter.com/craigslist_job"><img src="../images/twitter-55.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins-55.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin-55.png" alt="linkedin"></a>
+            </section>
+        </footer>
+
+    </body>
+</html>

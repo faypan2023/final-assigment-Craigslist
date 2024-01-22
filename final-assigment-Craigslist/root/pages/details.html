@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- end google fonts -->
+    <title>Craigslist--local life service platform--post details</title>
+   
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/details.css" type="text/css">
+     <link rel="stylesheet" href="../slick/slick.css">
+    <link rel="stylesheet" href="../slick/slick-theme.css">
+</head>
+
+<body>
+    <header>
+        <!--  top navigation -->
+        <section class="topNav">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                <h1>Craigslist</h1>
+                <!-- <img src="images/lan.gif" alt="lan"> -->
+                <div class="dropdown">
+                    <img src="../images/lan.gif" alt="Custom Image" id="dropdownBtn">
+                    <select class="dropdownContent" id="languageSelect">
+                        <option value="english" class="english"><img src="../images/lan.gif" alt="Custom Image"></option>
+                        <option value="spanish">español</option>
+                        <option value="french">français</option>
+                        <option value="italian">Italiano</option>
+                        <option value="korean">한국말</option>
+                        <option value="chinese" class="chinese">中文</option>
+                    </select>
+                </div>
+            </div>
+            <a href="../pages/likeviewitems.html"> <img src="../images/post.png" alt="post"></a>
+            <a href="../pages/loginmessage.html"><img src="../images/login.png" alt="login"></a><!-- linked to account page -->
+        </section>
+
+        <!--  search bar -->
+        <section class="searchbar">
+            <div class="searchBox">
+                <div class="locationDropdown">
+                    <img src="../images/locationIcon.png" alt="Location Icon" id="locationIcon">
+                    <select class="cityDropdown" id="citySelect">
+                        <option value="San Diego" disabled selected hidden>San Diego</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="| Search...">
+                <img src="../images/searchbar.png" alt="Search Icon" class="searchBtn">
+            </div>
+        </section>
+
+
+        <!--  icons navigation -->
+        <h2><a href="../index.html">Home</a> > Post Details >></h2>
+        <nav>
+            <figure>
+                <a href="../pages/local.html"><img src="../images/icons1.png" alt="local"></a><!-- linked to local page -->
+                <figcaption>Local</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/jobs.html"><img src="../images/icons2.png" alt="jobs"></a><!-- linked to jobs page -->
+                <figcaption>Jobs</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/housing.html"><img src="../images/icons3.png" alt="housing"></a><!-- linked to housing page -->
+                <figcaption>Housing</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/service.html"> <img src="../images/icons4.png" alt="service"></a><!-- linked to service page -->
+                <figcaption>Service</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/pets.html"><img src="../images/icons5.png" alt="pets"></a><!-- linked to pets page -->
+                <figcaption>Pets</figcaption>
+            </figure>
+        </nav>
+    </header>
+
+    <main>
+        <h1>2520 Clairemont Dr. #312</h1>
+        <h2>San Diego, CA 92117</h2>
+        
+        <article id="details">
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-2bd-2ba-newly-upgraded-condo/7706528595.html"><img src="../images/best1large.jpg" alt="clairemont"></a>
+                    <figcaption>Clairemont Mesa
+                    <h3>$3100</h3>
+                    <h4>San Diego, CA</h4>
+                    </figcaption>
+             </figure>
+           <ul>
+               <li>2 bedrooms</li>
+               <li>2 bathrooms</li>
+               <li>1,100 sq ft</li>
+               <li>Open floor plan</li>
+               <li>Dishwasher/Dryer</li>
+               <li>New appliances</li>
+               <li>Patio/Balcony</li>
+               <li>Swimming Pool</li>
+               <li>Jaccuzzi</li>
+               <li>Gymnasium</li>
+               <li>Game room</li>
+               <li>Extra storage</li>
+               <li>Assigned parking</li>
+               <li>Centrally located</li>
+               <li>Affordable HOA</li>
+           </ul>
+           <br>
+           
+            <div class="carousel">
+            <img src="../images/01.jpg" alt="interior">
+            <img src="../images/02.jpg" alt="interior">
+            <img src="../images/03.jpg" alt="interior">
+            <img src="../images/04.jpg" alt="interior">
+            <img src="../images/05.jpg" alt="interior">
+            <img src="../images/06.jpg" alt="interior">
+            <img src="../images/07.jpg" alt="interior">
+            <img src="../images/08.jpg" alt="interior">
+            <img src="../images/09.jpg" alt="interior">
+            <img src="../images/10.jpg" alt="interior">
+            <img src="../images/11.jpg" alt="interior">
+            <img src="../images/12.jpg" alt="interior">
+            </div>
+            
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   
+       <script src="../scripts/slick.min.js"></script>
+   
+           <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+               dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+            });
+        });
+            </script>
+           
+     <article class="map">
+           <h2>About the Neighborhood</h2>
+        
+            <div class="mapWrapper"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.049339585031!2d-117.20500360000001!3d32.790951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc0026e4ddb667%3A0x2c09461e3c8eb53a!2s2520%20Clairemont%20Dr%2C%20San%20Diego%2C%20CA%2092117!5e0!3m2!1sen!2sus!4v1705800101797!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                   
+        <p>Welcome to your new house in Clairemont! Make this condo your home or turn this amazing condo into a great investment property! Great location, with easy access to highways, restaurants, stores, and public transport! Close to San Diego Attractions, Mission Bay, Downtown, and Beaches. Just minutes away from 4107 Mount Alifan, you will find a Von's, Kohl's, Target, Starbucks, Sprouts, Home Depot, and many dining, shopping, and entertainment options. Check out the assigned schools: good ratings and all within one mile!</p>
+          </article>
+          
+         <p id="seeMore"><a href="mailto:poster@craigslist.com" class="button">Contact Poster >></a></p>
+        </article>
+        
+        <h1>Related Posts -
+                        <select class="townDropdown">
+                        <option value="elsewhere" disabled selected hidden>elsewhere</option>
+                        <option value="El Cajon">El Cajon</option>
+                        <option value="Downtown">Downtown</option>
+                        <option value="Bonita">Bonita</option>
+                        <option value="Del Mar">Del Mar</option>
+                        <option value="National City">National City</option>
+                        <option value="Pacific Beach">Pacific Beach</option>
+                        <option value="Hillcrest">Hillcrest</option>
+                        <option value="Spring Valley">Spring Valley</option>
+                        <option value="Linda Vista">Linda Vista</option>
+                        <option value="Ocean Beach">Ocean Beach</option>
+                        <option value="Lemon Grove">Lemon Grove</option>
+                        <option value="La Jolla">La Jolla</option>
+                        <option value="North Park">North Park</option>
+                        <option value="San Ysidro">San Ysidro</option>
+                    </select> </h1>
+        <article id="related">
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-enjoy-incredible-views-at-imt/7705614447.html"><img src="../images/baypark.jpg" alt="missionValley"></a>
+                <figcaption>Bay Park</figcaption>
+                <div>
+                    <h3>$2350</h3>
+                    <p>San Diego, 92108</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-do-not-look-past-this-three/7706144076.html"><img src="../images/lindavista.jpg" alt="eastVillage"></a>
+                <figcaption>Linda Vista</figcaption>
+                <div>
+                    <h3>$1635</h3>
+                    <p>San Diego, 92101</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://orangecounty.craigslist.org/mcd/d/chatsworth-2013-yamaha-stryker-twin-1304/7705795361.html"><img src="../images/kearnymesa.jpg" alt="yamahaStryker"></a>
+                <figcaption>Kearny Mesa</figcaption>
+                <div>
+                    <h3>$2995</h3>
+                    <p>San Diego, 91311</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/act/d/san-diego-free-softball-group-needs/7703426995.html"><img src="../images/university.jpg" alt="softballGroup"></a>
+                <figcaption>University City</figcaption>
+                <h3>$3495</h3>
+                <p>San Diego, 92113</p>
+            </figure>
+            <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article>
+        
+        <h1>Newest Posts -
+                    <select class="townDropdown">
+                        <option value="elsewhere" disabled selected hidden>elsewhere</option>
+                        <option value="El Cajon">El Cajon</option>
+                        <option value="Downtown">Downtown</option>
+                        <option value="Bonita">Bonita</option>
+                        <option value="Del Mar">Del Mar</option>
+                        <option value="National City">National City</option>
+                        <option value="Pacific Beach">Pacific Beach</option>
+                        <option value="Hillcrest">Hillcrest</option>
+                        <option value="Spring Valley">Spring Valley</option>
+                        <option value="Linda Vista">Linda Vista</option>
+                        <option value="Ocean Beach">Ocean Beach</option>
+                        <option value="Lemon Grove">Lemon Grove</option>
+                        <option value="La Jolla">La Jolla</option>
+                        <option value="North Park">North Park</option>
+                        <option value="San Ysidro">San Ysidro</option>
+                    </select>  
+        </h1>
+        <article id="newest">
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-enjoy-incredible-views-at-imt/7705614447.html"><img src="../images/newest1.jpg" alt="missionValley"></a>
+                <figcaption>Hillsdale, El Cajon</figcaption>
+                <div>
+                    <h3>$2350</h3>
+                    <p>San Diego, CA 92108</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/apa/d/san-diego-do-not-look-past-this-three/7706144076.html"><img src="../images/newest2.jpg" alt="eastVillage"></a>
+                <figcaption>East Village, Downtown</figcaption>
+                <div>
+                    <h3>$4635</h3>
+                    <p>San Diego, CA 92101</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://orangecounty.craigslist.org/mcd/d/chatsworth-2013-yamaha-stryker-twin-1304/7705795361.html"><img src="../images/rancho.jpg" alt="Bonita"></a>
+                <figcaption>Rancho Del Rey, Bonita</figcaption>
+                <div>
+                    <h3>$7995</h3>
+                    <p>San Diego, CA 93401</p>
+                </div>
+            </figure>
+            <figure>
+                <a href="https://sandiego.craigslist.org/csd/act/d/san-diego-free-softball-group-needs/7703426995.html"><img src="../images/delmar.webp" alt="softballGroup"></a>
+                <figcaption>Del Mar Heights, Del Mar</figcaption>
+                <h3>$2635</h3>
+                <p>San Diego, CA 99145</p>
+            </figure>
+            <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article>
+    </main>
+
+    <footer>
+        <section class="bottomNav">
+            <p><a href="pages/policy.html">Policy</a></p>
+            <!-- linked to privacy policy page -->
+            <p><a href="pages/about.html">About</a></p><!-- linked to about page -->
+            <p><a href="pages/contact.html">Contact</a></p><!-- linked to contact page -->
+            <p><a href="pages/help.html">Help</a></p><!-- linked to help page -->
+            <p><a href="https://www.craigslist.org/about/craigslist_is_hiring">Hiring</a></p>
+            <a href="https://www.craigslistfund.org/" class="Foundation"><img src="../images/CraigslistFoundation.png" alt="charitableFund"></a>
+            <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="../images/Philanthropies.png" alt="newmarkPhilanthropies"></a>
+        </section>
+
+            <section class="socialMedia">
+                <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook-55.png" alt="facebook"></a>
+                <a href="https://twitter.com/craigslist_job"><img src="../images/twitter-55.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins-55.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin-55.png" alt="linkedin"></a>
+            </section>
+        </footer>
+    </body>
+</html>
