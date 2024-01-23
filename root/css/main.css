@@ -354,10 +354,10 @@ article#loved {
     height: 200px;
 }
 
-ul {
+ul#specs {
     column-count: 2;
     list-style: circle;
-    margin: 1em 5em;
+    margin: 1em 5em;    
 }
 
 #messages {
@@ -387,68 +387,6 @@ th {
     background-color: var(--yellow-color);
     color: white;
     font-size: 2rem;
-}
-
-h5 {
-    color: var(--orange-color);
-    margin: .25em auto .75em;
-    font-size: 2em;
-}
-
-label {
-    font-size: 1.9rem;
-}
-
-li {
-    display: inline-block;
-    padding: .5em;
-}
-
-#login input, #sendMessage input {
-    font-size: 1.25em;
-    padding: .5em;
-    margin: .5em;
-    border: solid 1px var(--darkblue-color);
-    border-radius: 1em;
-}
-
-main figure  {
-    color: var(--darkblue-color);
-    font-size: 1.2rem;
-}
-
-#login {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    vertical-align: middle;
-    border: 3px dotted var(--orange-color);
-    width: 75%;
-    margin: 2em auto;
-   padding: 1em 3em;
-
-}
-
-#logout {
-    display:grid;
-    justify-content: center;
-    vertical-align: middle;
-    padding: 2rem;
-    margin: 2rem;
-}
-
-#sendMessage {
-    display: grid;
-    justify-content: center;
-    vertical-align: middle;
-    border: dashed var(--yellow-color) 3px;
-    width: 75%;
-    margin: 2em auto;
-    padding: 1em;
-}
-
-textarea {
-    margin-left: 3rem;
 }
 
 .window {
@@ -483,6 +421,74 @@ textarea {
     height: 100%;
     z-index: 5;
     display: none;
+}
+
+h5 {
+    color: var(--orange-color);
+    margin: .25em auto .75em;
+    font-size: 2em;
+}
+
+label {
+    font-size: 1.9rem;
+}
+
+ul {
+    display: grid;
+}
+
+li {
+    padding: .5em;
+    display: block;
+    vertical-align: middle;
+}
+
+#login input, #sendMessage input {
+    font-size: 1.25em;
+    padding: .5em;
+    margin: .5em;
+    border: solid 1px var(--darkblue-color);
+    border-radius: 1em;
+}
+
+main figure  {
+    color: var(--darkblue-color);
+    font-size: 1.2rem;
+}
+
+#login {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    border: 3px dotted var(--orange-color);
+    width: 75%;
+    margin: 2em auto;
+   padding: 1em 3em;
+}
+
+#logout {
+    display:grid;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+#sendMessage {
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
+    border: dashed var(--yellow-color) 3px;
+    width: 75%;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+#forms {
+    display: grid;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .townDropdown {
