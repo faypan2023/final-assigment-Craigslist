@@ -12,7 +12,6 @@
     <!-- end google fonts -->
     <title>Craigslist--local life service platform--help--contact us</title>
     <link rel="stylesheet" href="../css/reset.css" type="text/css">
-    <link rel="stylesheet" href="../css/contact.css" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
 </head>
 
@@ -78,23 +77,33 @@
         </nav>
     </header>
 
-    <main id="help">
-        <h1>Our Principles</h1>
-        <article>
-            <section>
-                <img src="../images/principles.png" alt="principles iceberg">
-            </section>
-            <section id="principles">
-                <h2>Principle 1:</h2><p>giving each other a break, getting the word out about everyday, real-world stuff.</p>
-                <h2>Principle 2:</h2><p>restoring the human voice to the Internet, in a humane, non-commercial environment.</p>
-                <h2>Principle 3:</h2><p>keeping things simple, common-sense, down-to-earth, honest, very real.</p>
-                <h2>Principle 4:</h2><p>providing an alternative to impersonal, big-media sites.</p>
-                <h2>Principle 5:</h2><p>being inclusive, giving a voice to the disenfranchised, democratizing...</p>
-                <h2>Principle 6:</h2><p>being a collection of communities with similar spirit, not a single monolithic entity.</p>
-            </section>
-        </article>
-        <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
-
+    <main id="contact">
+        <form action="#" method="post" id="mainContent" enctype="text/plain">
+              
+            <fieldset>
+                <legend>Contact Us</legend>
+                <ul id="contactInfoMessage">
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required> 
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="phone">Telephone number:</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </li>
+                    <li id="questionMessage">
+                        <label>Question or message:</label>
+                        <textarea name="message" id="message"></textarea>
+                    </li>
+                </ul>
+                <input type="submit" id="submit" class="button" value="Send">
+            </fieldset>
+            
+        </form>
     </main>
 
     <footer>
@@ -102,7 +111,7 @@
             <p><a href="../pages/privacyPolicy.html">Policy</a></p><!-- linked to privacy policy page -->
             <p><a href="../pages/aboutUs.html">About</a></p><!-- linked to about page -->
             <p><a href="../pages/contactUs.html">Contact</a></p><!-- linked to contact page -->
-            <p><a href="#">Help</a></p><!-- linked to help/FAQ page -->
+            <p><a href="../pages/help.html">Help</a></p><!-- linked to help/FAQ page -->
             <p><a href="https://www.craigslist.org/about/craigslist_is_hiring">Hiring</a></p>
             <a href="https://www.craigslistfund.org/" class="Foundation"><img src="../images/CraigslistFoundation.png" alt="charitableFund"></a>
             <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="../images/Philanthropies.png" alt="newmarkPhilanthropies"></a>

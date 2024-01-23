@@ -23,6 +23,16 @@ html {
     --spacer: 1rem;
     --db-spacer: calc(var(--spacer)*2);
     --border-radius: 28px;
+    /* define help grid */
+    --helpColumns: 1fr;
+    --helpRows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* define faq grid */
+    --faqColumns: 1fr;
+    --faqRows: 5rem 1fr 1fr 1fr 1fr 1fr 1fr;
+    --faqTitleSpan: 1/1;
+    /* define contact grid */
+    --contactColumns: 1fr;
+    
 }
 
 body {
@@ -418,3 +428,188 @@ a:hover {
             }
         }
 /*end local page styles*/
+
+/* set fontsize for ol, ul, td */
+ol, ul, td {
+    font-size: calc(var(--font-size)*0.75);
+}
+
+/*help page styles*/
+#principles {
+    text-align: center;
+}
+
+#principlesList {
+    display: grid;
+    grid-template-columns: var(--helpColumns);
+    grid-template-rows: var(--helpRows);
+    padding: var(--spacer);
+    grid-gap: var(--spacer);
+}
+
+#principlesList div {
+    border: solid 2px #3660a1;
+    border-radius: 1rem;
+    padding: var(--spacer);
+}
+
+@media screen and (min-width: 700px) {
+    :root { 
+        --helpColumns: 1fr 1fr 1fr;
+        --helpRows: 1fr 1fr;
+    }
+}
+/*end help page styles*/
+
+/*privacy policy page styles*/
+#privacy p { 
+    padding: 1rem;
+}
+
+#policyLinks {
+    text-align: center;
+}
+
+#privacy b {
+    font-weight: bold;
+}
+
+#privacy table {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+#privacy td {
+    padding: 1rem;
+    border: solid 1px #3660a1;
+}
+
+#privacy ol, #privacy ul {
+    padding-left: 4rem;
+}
+
+#privacy ol {
+    list-style: decimal;
+}
+
+#privacy ul {
+    list-style: circle;
+}
+/*end privacy policy page styles*/
+
+/*about us page styles*/
+#about p {
+    width: 90%;
+}
+/*about us page styles*/
+
+/*faq page styles*/
+#faq {
+    text-align: center;
+    display: grid;
+    grid-template-columns: var(--columns);
+    grid-template-rows: var(--rows);
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+#faq h1 {
+    grid-column: var(--titleSpan);
+}
+
+@media screen and (min-width: 500px) {
+    :root { 
+        --columns: 1fr 1fr;
+        --rows: 5rem 1fr 1fr 1fr 1fr;
+        --titleSpan: 1/3;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    :root { 
+        --columns: 1fr 1fr 1fr;
+        --rows: 5rem 1fr 1fr 1fr;
+        --titleSpan: 1/4;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    :root { 
+        --columns: 1fr 1fr 1fr 1fr;
+        --rows: 5rem 1fr 1fr;
+        --titleSpan: 1/5;
+    }
+}
+/*faq page styles*/
+
+/*contact page styles*/
+#contact {
+    width: 90%;
+    margin: auto;
+}
+
+#contact legend {
+    font-size: calc(var(--font-size)*1.5);
+    font-weight: 700;
+    margin: 5rem auto 3rem;
+}
+
+#contact label {
+    display: inline-block;
+    text-align: center;
+    width: 20rem;
+}
+
+#contact input, #contact textarea {
+    margin: 1em;
+    border: solid 1px var(--darkblue-color);
+    border-radius: 1em;
+}
+
+#contact input {
+    max-width: 30rem;
+    width: 85%;
+}
+
+#contact input[type="submit"] {
+    float: right;
+    width: auto;
+    padding: 2rem;
+}
+
+#contact textarea {
+    min-height: 180px;
+    width: 100%;
+    margin: 1rem auto 4rem auto;
+}
+
+#contactInfoMessage {
+    display: grid;
+    grid-template-columns: var(--contactColumns);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 450px) {
+    :root {
+        --contactColumns: 1fr 1fr;
+    }
+    
+    #questionMessage {
+        grid-column: 1/3;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    :root {
+        --contactColumns: 1fr 1fr 1fr;
+    }
+    
+    #questionMessage {
+        grid-column: 1/4;
+    }
+}
+/*end contact page styles*/
