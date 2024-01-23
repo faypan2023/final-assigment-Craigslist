@@ -354,10 +354,11 @@ article#loved {
     height: 200px;
 }
 
-ul#specs {
+#specs {
     column-count: 2;
     list-style: circle;
     margin: 1em 5em;    
+    border: solid red 1px;
 }
 
 #messages {
@@ -431,10 +432,6 @@ h5 {
 
 label {
     font-size: 1.9rem;
-}
-
-ul {
-    display: grid;
 }
 
 li {
