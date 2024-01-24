@@ -520,7 +520,7 @@ main figure  {
 
 /*haipei's code*/
 
-/*profile photo size*/
+     /*profile photo size*/
 
 <style>
     nav {
@@ -550,6 +550,26 @@ h2 {
         line-height: 1.2; 
     }
 </style>
+
+.NewPostDetails body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.NewPostDetails {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+
+
+/*end of Haipei's code*/
 
 
 /*media queries*/

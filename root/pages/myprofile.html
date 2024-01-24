@@ -12,12 +12,13 @@
     <!-- end google fonts -->
     <title>Craigslist--local life service platform--My profile</title>
     <link rel="stylesheet" href="../css/reset.css" type="text/css">
-    <link rel="stylesheet" href="../css/account.css" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
 </head>
 
 <body>
 <header>
+       
+       
         <!--  top navigation -->
         <section class="topNav">
             <div class="logo">
@@ -36,13 +37,30 @@
                     </select>
                 </div>
             </div>
-            <a href="https://post.craigslist.org/k/gLHCJxiz7hG_hu23NiS7Xg/443vb?s=subarea"> <img src="../images/post.png" alt="post"></a>
-            <a href="#"><img src="../images/login.png" alt="login"></a><!-- linked to account page -->
+            <a href="../pages/create_post.html"> <img src="../images/post.png" alt="post"></a>
+            <a href="../pages/myprofile.html"><img src="../images/login.png" alt="login"></a><!-- linked to account page -->
         </section>
     
+                 <!--  search bar -->
+        <section class="searchbar">
+            <div class="searchBox">
+                <div class="locationDropdown">
+                    <img src="../images/locationIcon.png" alt="Location Icon" id="locationIcon">
+                    <select class="cityDropdown" id="citySelect">
+                        <option value="San Diego">San Diego</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="| Search...">
+                <img src="../images/searchbar.png" alt="Search Icon" class="searchBtn">
+            </div>
+        </section>
      
 <!--     Home link to Home link-->
-     <h2><a href="../index.html">Home</a> > <a href="account.html">Account</a></h2>
+     <h2><a href="../index.html">Home</a> > Account >> My Profile</h2>
+     
      
 <!--  icons navigation -->        
          <nav>
@@ -85,47 +103,75 @@
 </nav>
 </header>
 
-
 <main>
-   <article>
-    <section id="createPost">
-        <h1><a href="create_post.html">Create A Post</a></h1>
-        <ul>
-            <li><a href="create_post.html#addPost">Add A New Post</a></li>
-            <li><a href="create_post.html#editPost">Edit My Post</a></li>
-            <li><a href="create_post.html#postsHistory">Posts History</a></li>
-            <li><a href="create_post.html#managePosts">Manage My Posts</a></li>
-        </ul>
-    </section>
-
-    <section id="likeAndViewItems">
-        <h1>Like &amp View Items</h1>
-        <ul>
-            <li>Liked Items</li>
-            <li>Saved Items</li>
-            <li>My View History</li>
-            <li>Transaction History</li>
-        </ul>
-    </section>
-
-    <section id="myProfile">
-        <h1><a href="my_profile.html">My Profile</a></h1>
-        <ul>
-            <li><a href="my_profile.html#editInfo">Edit My Information</a></li>
-            <li><a href="my_profile.html#deleteAccount">Delete My Account</a></li>
-        </ul>
-    </section>
-
-    <section id="myMessages">
-        <h1>My Message</h1>
-        <ul>
-            <li>View All Messages</li>
-            <li>Unread Messages</li>
-            <li>Archived Messages</li>
-            <li>Trash can</li>
-        </ul>
-    </section>
-</article>    
+   <h1>My Personal Data</h1>
+   <section>
+       <h2>Name: Michelle Davison</h2>
+       <h2>Sex:Female</h2>
+       <h2>Birthday:1990/01/20</h2>
+       
+   </section>
+   
+    <h1><span class="material-symbols-outlined">favorite</span> Posts I created</h1>
+        <article id="loved">
+           
+           <figure>
+                <a href="../pages/details.html"><img src="../images/myprofile-plumber.jpeg" alt="plumber searching"></a>
+                    <figcaption>Need a Plumber!!
+                    <h3>$100</h3>
+                    <h4>Hillcrest</h4>
+                    </figcaption>
+             </figure>
+             
+             <figure>
+                <a href="../pages/details.html"><img src="../images/myprofile-cooking.jpeg" alt="clairemont"></a>
+                    <figcaption>Share the Recipy of Crispy Everything Chicken Cutlets
+                    <h3>$0</h3>
+                    <h4>La Jolla</h4>
+                    </figcaption>
+            </figure>
+            
+            <figure>
+                <a href="../pages/details.html"><img src="../images/best1large.jpg" alt="clairemont"></a>
+                    <figcaption>Condo for Rent
+                    <h3>$3100</h3>
+                    <h4>Clairemont</h4>
+                    </figcaption>
+             </figure>
+             
+             
+            
+            <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article>
+        
+        <h1><span class="material-symbols-outlined">favorite</span> Items I sold</h1>
+        <article id="loved">
+            <figure>
+                <a href="#"><img src="../images/myprofile-switch.jpeg" alt="clairemont"></a>
+                    <figcaption>Switch Game Set
+                    <h3>$100</h3>
+                    <h4>Clairemont</h4>
+                    </figcaption>
+             </figure>
+             
+             <figure>
+                <a href="#"><img src="../images/myprofile-macbook.jpeg" alt="Macbook Pro Sale"></a>
+                    <figcaption>MacBook Pro
+                    <h3>$550</h3>
+                    <h4>Hillcrest</h4>
+                    </figcaption>
+             </figure>
+             
+             <figure>
+                <a href="../pages/details.html"><img src="../images/ariel.webp" alt="clairemont"></a>
+                    <figcaption>The Little Mermaid movie tickets
+                    <h3>$20</h3>
+                    <h4>La Jolla</h4>
+                    </figcaption>
+            </figure>
+            <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">See More >></a></p>
+        </article>
+        
 </main>
 
 <footer>
@@ -141,10 +187,10 @@
         </section>
 
         <section class="socialMedia">
-            <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook.gif" alt="facebook"></a>
-            <a href="https://twitter.com/craigslist_job"><img src="../images/twitter.gif" alt="twitter"></a>
-            <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins.gif" alt="instagram"></a>
-            <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin.gif" alt="linkedin"></a>
+            <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook-55.png" alt="facebook"></a>
+            <a href="https://twitter.com/craigslist_job"><img src="../images/twitter-55.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins-55.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin-55.png" alt="linkedin"></a>
         </section>
     </footer>
 
