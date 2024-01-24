@@ -366,11 +366,11 @@ article#loved {
 }
 
 #related img, #newest img {
-    height: 175px;
+    height: auto;
 }
 
 #liked img, #img {
-    height: 200px;
+    height: auto;
 }
 
 #specs {
