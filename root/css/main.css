@@ -549,6 +549,9 @@ main figure  {
         line-height: 1.2; 
     }
 
+.myMessages{
+    line-height: 1.5; 
+}
 
 /*media queries*/
 @media screen and (min-width: 600px) {
