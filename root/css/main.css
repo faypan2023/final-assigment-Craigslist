@@ -366,11 +366,11 @@ article#loved {
 }
 
 #related img, #newest img {
-    height: 175px;
+    height: auto;
 }
 
 #liked img, #img {
-    height: 200px;
+    height: auto;
 }
 
 #specs {
@@ -772,6 +772,11 @@ ol, ul, td {
     grid-template-rows: var(--faqRows);
     padding: 1rem;
     grid-gap: 1rem;
+}
+
+#faq h2 {
+    line-height: 3rem;
+    margin: 2rem;
 }
 
 #faq h1 {
