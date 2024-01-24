@@ -361,6 +361,10 @@ article#loved {
     max-width: 100%;
 }
 
+.mapWrapper iframe {
+    width: 100%;
+}
+
 #related img, #newest img {
     height: 175px;
 }
