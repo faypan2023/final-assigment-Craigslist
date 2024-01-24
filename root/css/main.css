@@ -813,6 +813,7 @@ ol, ul, td {
     font-size: calc(var(--font-size)*1.5);
     font-weight: 700;
     margin: 5rem auto 3rem;
+    padding-top: 2rem;
 }
 
 #contact label {
