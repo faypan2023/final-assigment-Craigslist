@@ -373,7 +373,8 @@ article#loved {
     column-count: 2;
     list-style: circle;
     margin: 1em 5em;    
-    border: solid red 1px;
+    border: solid var(--orange-color) 1px;
+    border-radius: 5%;
 }
 
 #messages {
