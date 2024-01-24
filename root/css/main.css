@@ -542,10 +542,6 @@ main figure  {
     text-align: center; 
 }
 
-#account h1, #account h2 {
-    margin: .3rem; 
-}
-
 #account h2 {
         line-height: 1.2; 
 }
