@@ -774,6 +774,11 @@ ol, ul, td {
     grid-gap: 1rem;
 }
 
+#faq h2 {
+    line-height: 3rem;
+    margin: 2rem;
+}
+
 #faq h1 {
     grid-column: var(--titleSpan);
 }
