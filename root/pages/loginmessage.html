@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- end google fonts -->
+    <title>Craigslist--local life service platform--messages/login</title>
+    
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     
+     <script>
+            $(function(){
+                $('p#callout').css('font-style', 'italic');
+                $('a[target="_blank"]').css('background-color','var(--yellow-color)');
+                $('.window [href]').css('color','var(--darkblue-color)');   
+                $('a[href="#"]').click(function(){
+                    $('.window').fadeIn(2000);
+                    $('#blackout').fadeIn(1000);
+                });
+                
+                $('.window a').click(function(){
+                   $('.window').hide();
+                    $('#blackout').hide();
+                });
+            });
+        </script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <!--  top navigation -->
+        <section class="topNav">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                <h1>Craigslist</h1>
+                <!-- <img src="images/lan.gif" alt="lan"> -->
+                <div class="dropdown">
+                    <img src="../images/lan.gif" alt="Custom Image" id="dropdownBtn">
+                    <select class="dropdownContent" id="languageSelect">
+                        <option value="english" class="english"><img src="../images/lan.gif" alt="Custom Image"></option>
+                        <option value="spanish">español</option>
+                        <option value="french">français</option>
+                        <option value="italian">Italiano</option>
+                        <option value="korean">한국말</option>
+                        <option value="chinese" class="chinese">中文</option>
+                    </select>
+                </div>
+            </div>
+            <a href="../pages/likeviewitems.html"> <img src="../images/post.png" alt="post"></a>
+            <a href="../pages/loginmessage.html"><img src="../images/login.png" alt="login"></a><!-- linked to account page -->
+        </section>
+
+        <!--  search bar -->
+        <section class="searchbar">
+            <div class="searchBox">
+                <div class="locationDropdown">
+                    <img src="../images/locationIcon.png" alt="Location Icon" id="locationIcon">
+                    <select class="cityDropdown" id="citySelect">
+                        <option value="San Diego" disabled selected hidden>San Diego</option>
+                        <option value="Las Vegas">Las Vegas</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="San Francisco">San Francisco</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="| Search...">
+                <img src="../images/searchbar.png" alt="Search Icon" class="searchBtn">
+            </div>
+        </section>
+        
+        <!--  icons navigation -->
+        <h2><a href="../index.html">Home ></a> My Account >> Messages and Login >>></h2>
+        <nav>
+            <figure>
+                <a href="../pages/local.html"><img src="../images/icons1.png" alt="local"></a><!-- linked to local page -->
+                <figcaption>Local</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/jobs.html"><img src="../images/icons2.png" alt="jobs"></a><!-- linked to jobs page -->
+                <figcaption>Jobs</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/housing.html"><img src="../images/icons3.png" alt="housing"></a><!-- linked to housing page -->
+                <figcaption>Housing</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/service.html"> <img src="../images/icons4.png" alt="service"></a><!-- linked to service page -->
+                <figcaption>Service</figcaption>
+            </figure>
+            <figure>
+                <a href="../pages/pets.html"><img src="../images/icons5.png" alt="pets"></a><!-- linked to pets page -->
+                <figcaption>Pets</figcaption>
+            </figure>
+        </nav>
+    </header>
+
+    <main>
+        <h1><span class="material-symbols-outlined">chat</span>My Message Inbox</h1>
+        
+        <article id="messages">
+            <table>
+                <tr>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                    <th>POSTER</th>
+                    <th>MESSAGE</th>
+                    <th>RESPONSE</th>
+                </tr>
+                <tr>
+                    <td>01/12/24</td>
+                    <td>12:03pm</td>
+                    <td>@SD_farmer82</td>
+                    <td>"Hi there, I am reaching out regarding the truck you are advertising on the local page..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>01/07/24</td>
+                    <td>11:52am</td>
+                    <td>@student.92101.1</td>
+                    <td>"Good afternoon, my name is Dan and I saw the message you posted on the forum in the..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>01/01/24</td>
+                    <td>12:01am</td>
+                    <td>@your_ex_gf</td>
+                    <td>"Hello... It's me..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>12/25/23</td>
+                    <td>05:09pm</td>
+                    <td>@kansas_city_gma</td>
+                    <td>"Merry Christmas! It is snowing over here and we are missing the kids over here in Kansas! We sure hope you can..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>12/13/23</td>
+                    <td>02:34pm</td>
+                    <td>@your_yoga_teacher</td>
+                    <td>"Namaste! Hope you are ready for the holidays because this season will be the best one yet with a free session from our..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>12/02/23</td>
+                    <td>10:21am</td>
+                    <td>@eastcounty.plumber</td>
+                    <td>"Good morning, I am responding to your email about the..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>11/29/23</td>
+                    <td>12:03pm</td>
+                    <td>@SD_surfing_dude</td>
+                    <td>"Hi there, could you please give me a little more information..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>11/24/23</td>
+                    <td>01:50pm</td>
+                    <td>@northcounty_mom</td>
+                    <td>"Greetings darling, I would love to know whether or not you still have that lovely..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+                <tr>
+                    <td>11/15/23</td>
+                    <td>10:11pm</td>
+                    <td>@SF_traveller</td>
+                    <td>"Good evening fine fellow, the purpose of this communication is to inquire on..."</td>
+                    <td>Reply / Delete</td>
+                </tr>
+            </table>
+            
+         <p id="seeMore"><a href="mailto:poster@craigslist.com" class="button">See All Messages >></a></p>
+         
+        </article>
+        <div id="forms">
+        <h1><span class="material-symbols-outlined">
+forward_to_inbox
+</span>Send a Message</h1>
+       
+        <article id="sendMessage">
+           <form action="/mailinglist.php" method="post" id="form">
+                <fieldset id="basics">              
+                    <ul>
+                       <li><label>Recipient:<br><input type="text" name="fullname" placeholder="@example.poster_123"></label></li>
+                        <li><label>Your name:<br><input type="text" name="fullname" placeholder="First M. Last"></label></li>
+                        <li><label>Your email:<br><input type="email" name="email" placeholder="example@craigslist.com"></label></li>
+                        <li><label>Your telephone number:<br><input type="tel" name="phone" placeholder="123-456-7890"></label></li>
+                        <li><label>Your message/question:<br><textarea name="question" rows="5" cols="50" placeholder="50 words or less..."></textarea></label></li>
+                    </ul>
+                </fieldset>
+                <input type="file" name="photo"></label>
+                
+                <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">Send Message >></a></p>
+            </form>
+        </article>
+        
+        <h1><span class="material-symbols-outlined">passkey</span>Login Different Account</h1>
+        
+        <article id="login">
+         <fieldset>
+                    <h5 class="type">Account type:</h5>
+                    
+                    <ul id="amenities">
+                        <li>
+                        <label for="pool">
+                        <input type="radio" id="pool" name="amenities">
+                        <span></span>Friends</label></li>
+                        <li>
+                        <label for="bikes">
+                        <input type="radio" id="bikes" name="amenities">
+                        <span></span>Family</label></li>
+                        <li>
+                        <label for="tenniscourts">
+                        <input type="radio" id="tenniscourts" name="amenities">
+                        <span></span>Work</label></li>
+                        <li>
+                        <label for="kidstoys">
+                        <input type="radio" id="kidstoys" name="amenities">
+                        <span></span>Private</label></li>
+                    </ul>
+            </fieldset>
+            <fieldset>          
+                 <ol>
+                    <li>
+                        <label for="firstlast">Username:</label>
+                        <input type="text" name="fullname" id="firstLast">
+                    </li>
+                    <li>
+                        <label for="email">Email/Phone:</label>
+                        <input type="text" name="email" id="email">
+                        </li>
+                      <li>
+                        <label for="form-pswd">Password:</label>
+                        <input type="password" name="pswd" maxlength="12" id="form-pswd">
+                        </li>    
+                    </ol>
+            
+                    </fieldset>
+                    
+                </fieldset>
+          
+           <p id="seeMore"><a href="https://www.craigslist.org/about/best/all/" class="button">Login >></a></p>
+
+           </article>
+           </div>
+           
+            <article id="logout">
+            <h1><span class="material-symbols-outlined">logout</span>Logout</h1>
+            <p id="seeMore"><a href="#" class="button">Logout >></a></p>
+            </article>
+        
+    </main>
+
+    <footer>
+        <section class="bottomNav">
+            <p><a href="pages/policy.html">Policy</a></p>
+            <!-- linked to privacy policy page -->
+            <p><a href="pages/about.html">About</a></p><!-- linked to about page -->
+            <p><a href="pages/contact.html">Contact</a></p><!-- linked to contact page -->
+            <p><a href="pages/help.html">Help</a></p><!-- linked to help page -->
+            <p><a href="https://www.craigslist.org/about/craigslist_is_hiring">Hiring</a></p>
+            <a href="https://www.craigslistfund.org/" class="Foundation"><img src="../images/CraigslistFoundation.png" alt="charitableFund"></a>
+            <a href="https://craignewmarkphilanthropies.org/" class="Philanthropies"><img src="../images/Philanthropies.png" alt="newmarkPhilanthropies"></a>
+        </section>
+
+            <section class="socialMedia">
+                <a href="https://www.facebook.com/groups/1490891051197225/"><img src="../images/facebook-55.png" alt="facebook"></a>
+                <a href="https://twitter.com/craigslist_job"><img src="../images/twitter-55.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/craigslistsfinest/"><img src="../images/ins-55.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/company/craigslist"><img src="../images/linkedin-55.png" alt="linkedin"></a>
+            </section>
+        </footer>
+
+   <section class="window">
+             <h2>Are you sure?</h2>
+             <p>Thank you for visiting the new and improved Craigslist! We will miss you, so please don't leave us for too long and be sure to come back soon. Don't forget to tell your friends about us for our community to grow! If you're sure you're ready to head out, just click on the top-right X to logout securely.</p>
+             <a href="#">X</a>
+         </section>
+        <div id="blackout"></div>
+   
+    </body>
+</html>
