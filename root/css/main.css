@@ -518,6 +518,41 @@ main figure  {
     background-color: transparent;
 }
 
+
+/*haipei's code*/
+
+/*profile photo size*/
+
+<style>
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .ProfilePhoto {
+        max-width: 25%;
+        min-width: 150px;
+        height: auto;
+        border: 5px solid orange;
+        margin-bottom: 1rem;
+    }
+
+    figure {
+        margin-top: 1rem; 
+        text-align: center; 
+    }
+
+h1, h2 {
+        margin: .3rem; 
+    }
+
+h2 {
+        line-height: 1.2; 
+    }
+</style>
+
+
 /*media queries*/
 @media screen and (min-width: 600px) {
     :root {
@@ -639,7 +674,7 @@ main figure  {
             }
         }
 /*end local page styles*/
-
+/* cristian's css code*/
 /* set fontsize for ol, ul, td */
 ol, ul, td {
     font-size: calc(var(--font-size)*0.75);
@@ -662,6 +697,17 @@ ol, ul, td {
     border: solid 2px #3660a1;
     border-radius: 1rem;
     padding: var(--spacer);
+}
+
+#principlesList h2 {
+    margin: .3rem;
+}
+
+@media screen and (min-width: 500px) {
+    :root { 
+        --helpColumns: 1fr 1fr;
+        --helpRows: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -694,6 +740,7 @@ ol, ul, td {
 #privacy td {
     padding: 1rem;
     border: solid 1px #3660a1;
+    font-family: var(--primary-font);
 }
 
 #privacy ol, #privacy ul {
@@ -707,20 +754,25 @@ ol, ul, td {
 #privacy ul {
     list-style: circle;
 }
+
+#privacy li {
+    display: list-item;
+}
 /*end privacy policy page styles*/
 
 /*about us page styles*/
 #about p {
+    padding: .5rem;
     width: 90%;
 }
-/*about us page styles*/
+/*end about us page styles*/
 
 /*faq page styles*/
 #faq {
     text-align: center;
     display: grid;
-    grid-template-columns: var(--columns);
-    grid-template-rows: var(--rows);
+    grid-template-columns: var(--faqColumns);
+    grid-template-rows: var(--faqRows);
     padding: 1rem;
     grid-gap: 1rem;
 }
@@ -731,28 +783,28 @@ ol, ul, td {
 
 @media screen and (min-width: 500px) {
     :root { 
-        --columns: 1fr 1fr;
-        --rows: 5rem 1fr 1fr 1fr 1fr;
+        --faqColumns: 1fr 1fr;
+        --faqRows: 5rem 1fr 1fr 1fr 1fr;
         --titleSpan: 1/3;
     }
 }
 
 @media screen and (min-width: 700px) {
     :root { 
-        --columns: 1fr 1fr 1fr;
-        --rows: 5rem 1fr 1fr 1fr;
+        --faqColumns: 1fr 1fr 1fr;
+        --faqRows: 5rem 1fr 1fr 1fr;
         --titleSpan: 1/4;
     }
 }
 
 @media screen and (min-width: 1160px) {
     :root { 
-        --columns: 1fr 1fr 1fr 1fr;
-        --rows: 5rem 1fr 1fr;
+        --faqColumns: 1fr 1fr 1fr 1fr;
+        --faqRows: 5rem 1fr 1fr;
         --titleSpan: 1/5;
     }
 }
-/*faq page styles*/
+/*end faq page styles*/
 
 /*contact page styles*/
 #contact {
@@ -824,3 +876,5 @@ ol, ul, td {
     }
 }
 /*end contact page styles*/
+
+/*end cristian's css code*/
