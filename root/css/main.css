@@ -322,7 +322,7 @@ a:hover {
 
 /*DANNY CSS- hope it doesnt mess anything up. lol*/
 main h2 {
-    /* text-align: center; */
+    text-align: center; 
     font-size: 1.5em;
 }
 
@@ -466,7 +466,7 @@ li {
 
 main figure  {
     color: var(--darkblue-color);
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 #login {
@@ -521,52 +521,37 @@ main figure  {
 
 /*haipei's code*/
 
-     /*profile photo size*/
+/*profile photo size*/
 
-#account nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
+<style>
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
 
-.ProfilePhoto {
-    max-width: 25%;
-    min-width: 150px;
-    height: auto;
-    border: 5px solid orange;
-    margin-bottom: 1rem;
-}
+    .ProfilePhoto {
+        max-width: 25%;
+        min-width: 150px;
+        height: auto;
+        border: 5px solid orange;
+        margin-bottom: 1rem;
+    }
 
-#account figure {
-    margin-top: 1rem; 
-    text-align: center; 
-}
+    figure {
+        margin-top: 1rem; 
+        text-align: center; 
+    }
 
-#account h1, #account h2 {
-    margin: .3rem; 
-}
+h1, h2 {
+        margin: .3rem; 
+    }
 
-#account h2 {
+h2 {
         line-height: 1.2; 
-}
+    }
+</style>
 
-.NewPostDetails body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.NewPostDetails {
-    max-width: 600px;
-    width: 100%;
-    margin: 20px;
-    text-align: center;
-}
-
-/*end of Haipei's code*/
 
 /*media queries*/
 @media screen and (min-width: 600px) {
