@@ -522,8 +522,7 @@ main figure  {
 
 /*profile photo size*/
 
-<style>
-    nav {
+#acccount nav {
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -537,7 +536,7 @@ main figure  {
         margin-bottom: 1rem;
     }
 
-    figure {
+#account figure {
         margin-top: 1rem; 
         text-align: center; 
     }
